@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Лиза Патрикеева](https://up.htmlacademy.ru/adaptive/19/user/770579).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Кравченко] (https://htmlacademy.ru/profile/id13921).
 
 ---
 
