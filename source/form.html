@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <button class="site-list__close" type="button">X</button>
+      <button class="main-nav__close" type="button">X</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a href="index.html">Главная</a></li>
@@ -20,41 +20,46 @@
         <li class="site-list__item">
           <a href="https://htmlacademy.ru">Html academy</a></li>
       </ul>
-      <a><img class="main-nav__icon-menu" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Изображение для меню"></a>
     </nav>
     <div class="page-header__top">
-      <button class="menu-button"><img class="main-nav__logo-image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
+      <a class="logo" href="index.html">
+        <img src="https://via.placeholder.com/23x21" width="23" height="21" alt="Логотип Седоны">
+      </a>
+      <button class="menu-button">
+        <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
       </button>
     </div>
-    <section class="intro">
-      <div class="intro__wrapper">
-        <img class="intro__sedona-img" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
-      </div>
-      <h1 class="page-title.review-info__title">Оставьте свой отзыв</h1>
-      <p class="review-info__text">Помогите нашим отелям стать лучше!
-        Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </section>
+    <div class="intro">
+      <img class="intro__sedona-img" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
+    </div>
   </header>
 
   <main class="page-main">
+    <div class="lead">
+      <h1 class="page-title lead__title">Оставьте свой отзыв</h1>
+      <p class="lead__text">Помогите нашим отелям стать лучше!
+        Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
     <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="review-form__item">
         <legend class="review-form__title">Представьтесь:</legend>
         <label class="review-form__label" for="your-name">Имя<sup>*</sup>:</label>
-        <input class="review-form__input" type="text" name="your-name" id="your-name" placeholder="Ваше имя" required></input>
+        <input class="review-form__input" type="text" name="your-name" id="your-name" placeholder="Ваше имя" required>
         <label class="review-form__label" for="your-surname">Фамилия<sup>*</sup>:</label>
-        <input class="review-form__input" type="text" name="surname" id="surname" placeholder="Ваша фамилия" required></input>
+        <input class="review-form__input" type="text" name="surname" id="surname" placeholder="Ваша фамилия" required>
         <label class="review-form__label" for="patronymic">Отчество:</label>
-        <input class="review-form__input" type="text" name="patronymic" id="patronymic" placeholder="Ваше отчество" required></input>
+        <input class="review-form__input" type="text" name="patronymic" id="patronymic" placeholder="Ваше отчество" required>
       </fieldset>
       <fieldset class="review-form__item">
         <legend class="review-form__title">Контактная информация</legend>
         <label class="review-form__phone" for="phone">Контактный телефон<sup>*</sup>:</label>
-        <input class="review-form__input" type="text" name="phone" id="phone" placeholder="Введите телефон" required></input>
-        <div class="review-form__phone-img"></div>
+        <p class="review-from__input-wrapper"><input class="review-form__input" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+          <span class="review-form__phone-img"></span>
+        </p>
         <label class="review-form__email" for="email">Электронная почта<sup>*</sup>:</label>
-        <input class="review-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required></input>
-        <div class="contact-information__email-img"></div>
+        <p class="review-from__input-wrapper"><input class="review-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+          <span class="contact-information__email-img"></span>
+        </p>
       </fieldset>
       <fieldset class="review-form__item">
         <legend class="review-form__title">Ваше общее впечатление:</legend>
@@ -87,13 +92,13 @@
   <footer class="page-footer">
     <p class="page-footer__hashtag">#Visitsedona</p>
     <ul class="footer__list social">
-      <li class="social__item"><a class="social__link social__link--twitter" href="https://tw.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__link--twitter" aria-label="Седона в Твиттере" href="https://tw.com/htmlacademy">
           <p>Твиттер</p>
         </a></li>
-      <li class="social__item"><a class="social__link social__link--facebook" href="https://fc.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__link--facebook" aria-label="Седона в Фэйсбуке" href="https://fc.com/htmlacademy">
           <p>Фэйсбук</p>
         </a></li>
-      <li class="social__item"><a class="social__link social__link--youtube" href="https://yt.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__link--youtube" aria-label="Седона в Ютубе" href="https://yt.com/htmlacademy">
           <p>Ютуб</p>
         </a></li>
     </ul>

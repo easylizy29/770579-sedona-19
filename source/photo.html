@@ -9,9 +9,10 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
+      <button class="main-nav__close" type="button">X</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a href="index.html">Главная</a><span class="site-list__close">X</span></li>
+          <a href="index.html">Главная</a></li>
         <li class="site-list__item">
           <a>Фото и видео</a></li>
         <li class="site-list__item">
@@ -19,21 +20,24 @@
         <li class="site-list__item">
           <a href="https://htmlacademy.ru">Html academy</a></li>
       </ul>
-      <a><img class="main-nav__icon-menu" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Изображение для меню"></a>
     </nav>
     <div class="page-header__top">
-      <button class="menu-button"><img class="main-nav__logo-image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
+      <a class="logo" href="index.html">
+        <img src="https://via.placeholder.com/23x21" width="23" height="21" alt="Логотип Седоны">
+      </a>
+      <button class="menu-button">
+        <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
       </button>
     </div>
-    <div class="intro__wrapper">
-      <img class="intro__image" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
+    <div class="intro">
+      <img class="intro__sedona-img" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
     </div>
   </header>
 
   <main class="page-main">
     <gallery>
       <section class="intro">
-        <h1 class="page-title.gallery__title">Фото и видео</h1>
+        <h1 class="page-title intro__title">Фото и видео</h1>
         <p class="intro__text">Не можете решиться на путешествие
           из за курса?Фотографии помогут вам забыть о политике и экномике.</p>
       </section>
@@ -86,9 +90,13 @@
           </div>
           <div class="feedback-item">
             <video class="feedback-video__video" controls preload="metadata" width="321" height="201" loop poster="img/mp4.jpg">
-              <source src="./video/video.mp4" type="video/mp4">
-              <source src="./video/video.ogv" type="video/ogg">
-              <source src="./video/video.webm" type="video/webm">
+              <div class="video-item">
+                <source src="./video/video.mp4" type="video/mp4">
+              </div>
+              <div class="video-item">
+                <source src="./video/video.ogv" type="video/ogg">
+                <source src="./video/video.webm" type="video/webm">
+              </div>
             </video>
           </div>
         </div>
@@ -99,13 +107,13 @@
   <footer class="page-footer">
     <p class="page-footer__hashtag">#Visitsedona</p>
     <ul class="footer__list social">
-      <li class="social__item"><a class="social__link social__link--twitter" href="https://tw.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__link--twitter" aria-label="Седона в Твиттере" href="https://tw.com/htmlacademy">
           <p>Твиттер</p>
         </a></li>
-      <li class="social__item"><a class="social__link social__link--facebook" href="https://fc.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__link--facebook" aria-label="Седона в Фэйсбуке" href="https://fc.com/htmlacademy">
           <p>Фэйсбук</p>
         </a></li>
-      <li class="social__item"><a class="social__link social__linkk--youtube" href="https://yt.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__linkk--youtube" aria-label="Седона в Ютубе" href="https://yt.com/htmlacademy">
           <p>Ютуб</p>
         </a></li>
     </ul>

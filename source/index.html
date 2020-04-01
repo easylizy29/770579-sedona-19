@@ -9,9 +9,10 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
+      <button class="main-nav__close" type="button">X</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>ГЛАВНАЯ</a><span class="site-list__close">X</span></li>
+          <a>Главная</a></li>
         <li class="site-list__item">
           <a href="photo.html">Фото и видео</a></li>
         <li class="site-list__item">
@@ -19,11 +20,17 @@
         <li class="site-list__item">
           <a href="https://htmlacademy.ru">Html academy</a></li>
       </ul>
-      <a><img class="main-nav__icon-menu" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Изображение для меню"></a>
     </nav>
     <div class="page-header__top">
-      <button class="menu-button"><img class="main-nav__logo-image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
+      <a class="logo">
+        <img src="https://via.placeholder.com/23x21" width="23" height="21" alt="Логотип Седоны">
+      </a>
+      <button class="menu-button">
+        <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
       </button>
+    </div>
+    <div class="intro">
+      <img class="intro__sedona-img" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
     </div>
   </header>
 
@@ -33,7 +40,7 @@
       <div class="intro">
         <img class="intro__image " src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
       </div>
-      <h1 class="page-title.information__title">Седона - небольшой город в Аризоне,
+      <h1 class="page-title information__title">Седона - небольшой город в Аризоне,
         заслуживающий большего!
       </h1>
       <p class="information__text">Рассмотрим 5 причин, по которым Седона круче,
@@ -42,32 +49,41 @@
     </section>
 
     <section class="features">
-      <ul class="features__sublist">
+      <ol class="features__sublist">
         <li class="features__item">
-          <section class="features__about-city">
-            <div class="features__info">
-              <h2 class="features__title">Настоящий городок</h2>
-              <p class="features__text">Седона не аттракцион для туристов,
-                там течет своя жизнь</p>
-            </div>
-            <div class="features__about-city-background"><img class="features__image" src="https://via.placeholder.com/0x0"></div>
-          </section>
+          <ul class="advices__sublist" <section class="features__about-city">
+            <li>
+              <div class="features__info">
+                <h2 class="features__title">Настоящий городок</h2>
+                <p class="features__text">Седона не аттракцион для туристов,
+                  там течет своя жизнь</p>
+              </div>
+            </li>
+            <li>
+              <div class="features__about-city-background"><img class="features__image" src="https://via.placeholder.com/100x100"></div>
+            </li>
+            <li>
+              <ul>
+                <li class="features__item">
+                  <h3 class="features__title">Жилье</h3>
+                  <p class="features__text">Рекомендуем пожить в настоящем мотеле,
+                    все как в кино!</p>
+                </li>
+                <li class="features__item">
+                  <h3 class="features__title">Сувениры</h3>
+                  <p class="features__text">Не только китайского, но и местного производства!</p>
+                </li>
+                <li class="features__item">
+                  <h3 class="features__title">Еда</h3>
+                  <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+              </ul>
 
-        </li>
-        <li class="features__item">
-          <h3 class="features__title">Жилье</h3>
-          <p class="features__text">Рекомендуем пожить в настоящем мотеле,
-            все как в кино!</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__title">Сувениры</h3>
-          <p class="features__text">Не только китайского, но и местного производства!</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__title">Еда</h3>
-          <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-      </ul>
+            </li>
+    </section>
+    </ul>
+    </li>
+    </ol>
     </section>
 
     <ul class="values__list">
@@ -116,13 +132,13 @@
   <footer class="page-footer">
     <p class="page-footer__hashtag">#Visitsedona</p>
     <ul class="footer__list social">
-      <li class="social__item"><a class="social__link social__link--twitter" href="https://tw.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__link--twitter" aria-label="Седона в Твиттере" href="https://tw.com/htmlacademy">
           <p>Твиттер</p>
         </a></li>
-      <li class="social__item"><a class="social__link social__link--facebook" href="https://fc.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__link--facebook" aria-label="Седона в Фэйсбуке" href="https://fc.com/htmlacademy">
           <p>Фейсбук</p>
         </a></li>
-      <li class="social__item"><a class="social__link social__link--youtube" href="https://yt.com/htmlacademy">
+      <li class="social__item"><a class="social__link social__link--youtube" aria-label="Седона в Ютубе" href="https://yt.com/htmlacademy">
           <p>Ютуб</p>
         </a></li>
     </ul>
