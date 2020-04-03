@@ -25,12 +25,12 @@
       <a class="logo" href="index.html">
         <img src="https://via.placeholder.com/23x21" width="23" height="21" alt="Логотип Седоны">
       </a>
-      <button class="menu-button">
+      <button class="page-header__menu-button">
         <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
       </button>
     </div>
     <div class="intro">
-      <img class="intro__sedona-img" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
+      <img class="intro__image" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
     </div>
   </header>
 
@@ -54,31 +54,31 @@
         <legend class="review-form__title">Контактная информация</legend>
         <label class="review-form__phone" for="phone">Контактный телефон<sup>*</sup>:</label>
         <p class="review-from__input-wrapper"><input class="review-form__input" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
-          <span class="review-form__phone-img"></span>
+          <span class="review-form__phone-icon"></span>
         </p>
         <label class="review-form__email" for="email">Электронная почта<sup>*</sup>:</label>
         <p class="review-from__input-wrapper"><input class="review-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
-          <span class="contact-information__email-img"></span>
+          <span class="review-form__email-icon"></span>
         </p>
       </fieldset>
       <fieldset class="review-form__item">
         <legend class="review-form__title">Ваше общее впечатление:</legend>
-        <input class="review-form__radio" type="radio" name="positive" id="positive" checked>
+        <input class="visually-hidden review-form__radio" type="radio" name="input-radio" id="positive" checked>
         <label class="review-form__label-radio" for="positive">Скорее положительное</label>
-        <input class="review-form__radio" type="radio" name="bad" id="bad">
+        <input class="visually-hidden review-form__radio" type="radio" name="input-radio" id="bad">
         <label class="review-form__label-radio" for="bad">Скорее отрицательное</label>
-        <input class="review-form__radio" type="radio" name="hard-answer" id="hard-answer">
+        <input class="visually-hidden review-form__radio" type="radio" name="input-radio" id="hard-answer">
         <label class="review-form__label-radio" for="hard-answer">Затрудняюсь ответить</label>
       </fieldset>
       <fieldset class="review-form__item">
         <legend class="review-form__title">Посещенные достопримечательности:</legend>
-        <input class="review-form__checkbox" type="checkbox" name="devel-bridge" id="devel-bridge" checked>
+        <input class="visually-hidden review-form__checkbox" type="checkbox" name="devel-bridge" id="devel-bridge" checked>
         <label class="review-form__label-check" for="devel-bridge">Мост Дьявола</label>
-        <input class="review-form__checkbox" type="checkbox" name="mountain-bell" id="mountain-bell" checked>
+        <input class="visually-hidden review-form__checkbox" type="checkbox" name="mountain-bell" id="mountain-bell" checked>
         <label class="review-form__label-check" for="mountain-bell">Гора-Колокол</label>
-        <input class="review-form__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
+        <input class="visually-hidden review-form__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
         <label class="review-form__label-check" for="slide-park">Слайд-парк</label>
-        <input class="review-form__checkbox" type="checkbox" name="red-rocks" id="red-rocks">
+        <input class="visually-hidden review-form__checkbox" type="checkbox" name="red-rocks" id="red-rocks">
         <label class="review-form__label-check" for="red-rocks">Красные скалы</label>
       </fieldset>
       <fieldset class="review-form__item">
@@ -93,19 +93,19 @@
     <p class="page-footer__hashtag">#Visitsedona</p>
     <ul class="footer__list social">
       <li class="social__item"><a class="social__link social__link--twitter" aria-label="Седона в Твиттере" href="https://tw.com/htmlacademy">
-          <p>Твиттер</p>
+          Твиттер
         </a></li>
       <li class="social__item"><a class="social__link social__link--facebook" aria-label="Седона в Фэйсбуке" href="https://fc.com/htmlacademy">
-          <p>Фэйсбук</p>
+          Фэйсбук
         </a></li>
       <li class="social__item"><a class="social__link social__link--youtube" aria-label="Седона в Ютубе" href="https://yt.com/htmlacademy">
-          <p>Ютуб</p>
+          Ютуб
         </a></li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <p>Разработано:</p>
+    <p class="page-footer__copyright copyright">
+      Разработано:
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
+    </p>
   </footer>
 
 </body>

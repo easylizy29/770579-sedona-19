@@ -25,102 +25,125 @@
       <a class="logo" href="index.html">
         <img src="https://via.placeholder.com/23x21" width="23" height="21" alt="Логотип Седоны">
       </a>
-      <button class="menu-button">
+      <button class="page-header__menu-button">
         <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
       </button>
     </div>
     <div class="intro">
-      <img class="intro__sedona-img" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
+      <img class="intro__image" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Заголовок Седоны">
     </div>
   </header>
 
   <main class="page-main">
-    <gallery>
-      <section class="intro">
-        <h1 class="page-title intro__title">Фото и видео</h1>
-        <p class="intro__text">Не можете решиться на путешествие
-          из за курса?Фотографии помогут вам забыть о политике и экномике.</p>
-      </section>
-      <section class="gallery">
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <img class="gallery__open-spaces" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Неродные просторы">
-            <h2 class="gallery__title-gallery">Неродные просторы</h2>
-            <p class="gallery__text-gallery">Автор фото: Борис</p>
-            <div class="gallery__assessment">
-              <img class="assessment__like-icon" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Лайк">
-              <p class="assessment__text-assessment">1350</p>
+    <div class="lead">
+      <h1 class="page-title lead__title">Фото и видео</h1>
+      <p class="lead__text">Не можете решиться на путешествие
+        из за курса?Фотографии помогут вам забыть о политике и экномике.</p>
+    </div>
+    <section class="gallery">
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <img class="gallery__open-spaces" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Неродные просторы">
+          <div class="gallery__sublist">
+            <div class="gallery__sublist-item">
+              <h2 class="gallery__title-gallery">Неродные просторы</h2>
+              <p class="gallery__text-gallery">Автор фото: Борис</p>
             </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__native-vegetation" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Местная растительность">
-            <h2 class="gallery__title-gallery">Местная растительность</h2>
-            <p class="gallery__text-gallery">Автор фото: Сергей</p>
             <div class="gallery__assessment">
-              <img class="assessment__like-icon" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Лайк">
-              <p class="assessment__text-assessment">143</p>
+              <button class="gallery_assessment-btn">
+                <img class="assessment__like-icon" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Лайк">
+              </button>
+              <span class="assessment__text-assessment">1350</span>
             </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__road-north" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Дорога на север">
-            <h2 class="gallery__title-gallery">Дорога на север</h2>
-            <p class="gallery__text-gallery">Автор фото: Петр</p>
-            <div class="gallery__assessment">
-              <img class="assessment__like-icon" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Лайк">
-              <p class="assessment__text-assessment">96</p>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__devels-bridge" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Мост Дьявола">
-            <h2 class="gallery__title-gallery">Мост дьявола</h2>
-            <p class="gallery__text-gallery">Автор фото: Антон</p>
-            <div class="gallery__assessment">
-              <img class="assessment__like-icon" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Лайк">
-              <p class="assessment__text-assessment">254</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="video">
-        <div class="video__feedback-list">
-          <div class="video__feedback-item">
-            <h2 class="video__title">Все еще сомневаетесь?</h2>
-            <p class="video__text">Смотрите видеопрезентацию и скорее
-              за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-          <div class="feedback-item">
-            <video class="feedback-video__video" controls preload="metadata" width="321" height="201" loop poster="img/mp4.jpg">
-              <div class="video-item">
-                <source src="./video/video.mp4" type="video/mp4">
-              </div>
-              <div class="video-item">
-                <source src="./video/video.ogv" type="video/ogg">
-                <source src="./video/video.webm" type="video/webm">
-              </div>
-            </video>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__native-vegetation" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Местная растительность">
+          <div class="gallery__sublist">
+            <div class="gallery__sublist-item">
+              <h2 class="gallery__title-gallery">Местная растительность</h2>
+              <p class="gallery__text-gallery">Автор фото: Сергей</p>
+            </div>
+            <div class="gallery__assessment">
+              <button class="gallery_assessment-btn">
+                <img class="assessment__like-icon" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Лайк">
+              </button>
+              <span class="assessment__text-assessment">143</span>
+            </div>
           </div>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__road-north" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Дорога на север">
+          <div class="gallery__sublist">
+            <div class="gallery__sublist-item">
+              <h2 class="gallery__title-gallery">Дорога на север</h2>
+              <p class="gallery__text-gallery">Автор фото: Петр</p>
+            </div>
+            <div class="gallery__assessment">
+              <button class="gallery_assessment-btn">
+                <img class="assessment__like-icon" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Лайк">
+              </button>
+              <span class="assessment__text-assessment">96</span>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__devels-bridge" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Мост Дьявола">
+          <div class="gallery__sublist">
+            <div class="gallery__sublist-item">
+              <h2 class="gallery__title-gallery">Мост дьявола</h2>
+              <p class="gallery__text-gallery">Автор фото: Антон</p>
+            </div>
+            <div class="gallery__assessment">
+              <button class="gallery_assessment-btn">
+                <img class="assessment__like-icon" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Лайк">
+              </button>
+              <span class="assessment__text-assessment">254</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="video">
+      <div class="video__intro">
+        <h2 class="video__intro-title">Все еще сомневаетесь?</h2>
+        <p class="video__intro-text">Смотрите видеопрезентацию и скорее
+          за билетами, пока они не подорожали в очередной раз!</p>
+      </div>
+      <div class="video-screen">
+        <img class="gallery__devels-bridge" src="https://via.placeholder.com/180x120" width="120" height="180" alt="Картинка для видео">
+      </div>
+      <div class="video__controles">
+        <div class="video-timeline">
+          <button class="video__drag"></button>
         </div>
-      </section>
-    </gallery>
+      </div>
+      <div class="video__wrapper-controls">
+        <button class="video__control-item"></button>
+        <button class="video__control-item"></button>
+        <button class="video__control-item"></button>
+      </div>
+    </div>
   </main>
 
   <footer class="page-footer">
     <p class="page-footer__hashtag">#Visitsedona</p>
     <ul class="footer__list social">
       <li class="social__item"><a class="social__link social__link--twitter" aria-label="Седона в Твиттере" href="https://tw.com/htmlacademy">
-          <p>Твиттер</p>
+          Твиттер
         </a></li>
       <li class="social__item"><a class="social__link social__link--facebook" aria-label="Седона в Фэйсбуке" href="https://fc.com/htmlacademy">
-          <p>Фэйсбук</p>
+          Фэйсбук
         </a></li>
       <li class="social__item"><a class="social__link social__linkk--youtube" aria-label="Седона в Ютубе" href="https://yt.com/htmlacademy">
-          <p>Ютуб</p>
+          Ютуб
         </a></li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <p>Разработано:</p>
+    <p class="page-footer__copyright copyright">
+      Разработано:
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
+    </p>
   </footer>
 
 </body>
