@@ -1,0 +1,121 @@
+.review__form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 320px;
+  height: 1625px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.review-form__item {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.review-form__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.review-form__label {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.review-form__input {
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #e5e5e5;
+}
+
+.review-form__phone {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.review-from__input-wrapper {
+  height: 58px;
+  width: 58px;
+  background-color: #e6e6e6;
+}
+
+.review-form__input {
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #e5e5e5;
+
+}
+
+.review-form__phone-icon {
+  height: 18px;
+  width: 18px;
+  background-image: url(../img/icon-phone.svg);
+}
+
+.review-form__email {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.review-form__email-icon {
+  height: 18px;
+  width: 18px;
+  background-image: url(../img/icon-email.svg);
+}
+
+.review-form__radio {
+  height: 55px;
+  width: 55px;
+  background-image: url(???);
+}
+
+.review-form__label-radio {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.review-form__checkbox {
+  height: 46px;
+  width: 46px;
+  background-image: url(???);
+
+}
+
+.review-form__label-check {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.review-form__textarea {
+  padding: 22px;
+  height: 160px;
+  width: 280px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+.review-form__button {
+  padding: 22px;
+  height: 160px;
+  width: 280px;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+}

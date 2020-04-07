@@ -1,0 +1,35 @@
+.main-nav {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.main-nav__close {
+  color: #ffffff;
+}
+
+.main-nav__list {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  a {
+    color: #ffffff;
+    list-style: none;
+  }
+}
+
+.site-list__item {
+  li {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+.site-list__item--active {
+  background-color: #81b3d2;
+  color: rgba(255, 255, 255, 0.3);
+}

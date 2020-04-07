@@ -1,0 +1,35 @@
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  height: 290px;
+  width: 320px;
+  padding: 35px 20px 50px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  color: #000000;
+
+  .offers-button {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 20px 45px;
+    background-color: #81b3d2;
+  }
+}
+
+.offers__title {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.offers__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.offers__map {
+  height: 350px;
+  width: 320px;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+}

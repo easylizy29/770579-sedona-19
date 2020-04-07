@@ -1,0 +1,62 @@
+.values__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 950px;
+  width: 320px;
+  text-transform: uppercase;
+}
+
+.values__bridge {
+  height: 190px;
+  width: 320px;
+  background-color: #81b3d2;
+
+  .values__info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 47px 30px;
+    color: #ffffff;
+  }
+
+  .values__text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.values__info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 47px 30px;
+  color: #000000;
+}
+
+.values__bridge-background {
+  height: 260px;
+  width: 320px;
+  background-image: url("../img/photo-bridge-tablet@1.jpg");
+}
+
+.values__item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+}
+
+.values__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.values__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}

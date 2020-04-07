@@ -1,0 +1,27 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 245px;
+  width: 320px;
+  background-color: #fefefe;
+
+  .hashtag {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000000;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+
+  .copyright__link {
+    height: 34px;
+    width: 27px;
+    background-image: url("../img/htmlacademy.svg");
+  }
+}
