@@ -23,7 +23,7 @@
 .review-form__label {
   @include font-set(14px, 21px, 400);
   min-width: 170px;
-  padding: 20px;
+  padding: 10px;
   text-transform: uppercase;
   color: $grey;
 }
@@ -35,7 +35,6 @@
 }
 
 .review-from__input-wrapper {
-  height: 58px;
   width: 58px;
   background-color: $secondary-color;
 }
@@ -43,8 +42,8 @@
 .review-form__input {
   @include font-set(18px, 26px, 700);
   padding-left: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: $secondary-color;
 }
 

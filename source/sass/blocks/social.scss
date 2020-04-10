@@ -11,27 +11,31 @@
   width: 46px;
   margin-right: 5px;
   margin-left: 5px;
-  background-color: $primary-color;
 }
 
 .social__link {
+  height: 14px;
+  width: 18px;
   text-decoration: none;
+}
 
-  .link--twitter {
-    height: 14px;
-    width: 18px;
-    background-image: url("../img/icon-twitter.svg");
-  }
+.social__link--twitter {
+  height: 14px;
+  width: 18px;
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+}
 
-  .link--facebook {
-    height: 18px;
-    width: 9px;
-    background-image: url("../img/icon-facebook.svg");
-  }
+.solcial__link--facebook {
+  height: 18px;
+  width: 9px;
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+}
 
-  .link--youtube {
-    height: 14px;
-    width: 20px;
-    background-image: url("../img/icon-youtuve.svg");
-  }
+.social__link--youtube {
+  height: 14px;
+  width: 20px;
+  background-image: url("../img/icon-youtuve.svg");
+  background-repeat: no-repeat;
 }

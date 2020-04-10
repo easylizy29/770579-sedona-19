@@ -1,14 +1,3 @@
-.assessment__button {
-  height: 23px;
-  width: 23px;
-}
-
-.assessment__image {
-  height: 21px;
-  width: 23px;
-  background-image: url("../img/icon-like.svg");
-}
-
 .assessment__text {
   @include font-set(14px, 21px, 700);
   text-transform: uppercase;

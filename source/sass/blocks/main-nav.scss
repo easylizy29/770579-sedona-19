@@ -5,26 +5,25 @@
 }
 
 .main-nav__close {
-  color: $white;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icon-cross.svg");
 }
 
 .main-nav__list {
   list-style: none;
   text-transform: uppercase;
+  text-align: center;
 
   a {
     color: $white;
     list-style: none;
+    text-decoration: none;
   }
 }
 
 .site-list__item {
-  li {
-    background-color: $primary-color;
-    margin: 0;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
 .site-list__item--active {

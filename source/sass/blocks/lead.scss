@@ -10,11 +10,13 @@
 }
 
 .lead__title {
-  @include font-set(14px, 26px, 400);
+  @include font-set(18px, 26px, 700);
+  text-transform: uppercase;
   color: $black;
 }
 
 .lead__text {
   @include font-set(14px, 26px, 400);
   color: $black;
+  text-transform: uppercase;
 }

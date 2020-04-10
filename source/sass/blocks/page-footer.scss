@@ -1,7 +1,4 @@
 .page-footer {
-  display: flex;
-  flex-wrap: wrap;
-  height: 245px;
   width: 320px;
   background-color: $secondary-color;
 
@@ -11,15 +8,21 @@
   }
 }
 
-.page-footer__copyright {
-  @include font-set(14px, 21px, 400);
+.page-footer__list {
   display: flex;
   flex-wrap: nowrap;
-  color: $black;
+  width: 320px;
+  list-style: none;
+}
 
-  .copyright__link {
-    height: 34px;
-    width: 27px;
-    background-image: url("../img/htmlacademy.svg");
-  }
+.page-footer__copyright {
+  @include font-set(14px, 21px, 400);
+  color: $black;
+}
+
+.copyright__link {
+  height: 34px;
+  width: 27px;
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
 }

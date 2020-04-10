@@ -1,6 +1,5 @@
 .gallery {
   padding: 20px;
-  height: 1660px;
   width: 320px;
   background-color: $white;
 }
@@ -21,32 +20,11 @@
   border-bottom: 1px #e5e5e5;
 }
 
-.gallery__open-spaces {
-  margin: 22px;
-  height: 280px;
-  width: 280px;
-  background-image: url(../img/photo-sunset-mobile@1x.jpg);
-}
-
-.gallery__native-vegetation {
-  margin: 22px;
-  height: 280px;
-  width: 280px;
-  background-image: url(../img/photo-cactus-mobile@1x.jpg);
-}
-
-.gallery__road-north {
-  margin: 22px;
-  height: 280px;
-  width: 280px;
-  background-image: url(../img/photo-roads-mobile@1x.jpg);
-}
-
+.gallery__open-spaces,
+.gallery__native-vegetation,
+.gallery__road-north,
 .gallery__devels-bridge {
   margin: 22px;
-  height: 280px;
-  width: 280px;
-  background-image: url(../img/photo-bridge-mobile@1x.jpg);
 }
 
 .gallery__sublist {
@@ -74,4 +52,8 @@
 .gallery__assessment {
   display: flex;
   flex-wrap: nowrap;
+}
+
+.gallery__assessment-button {
+  border: none;
 }

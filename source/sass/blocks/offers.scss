@@ -1,30 +1,33 @@
 .offers {
   display: flex;
   flex-wrap: wrap;
-  height: 290px;
-  width: 320px;
   padding: 35px 20px 50px;
   background-color: $white;
   text-transform: uppercase;
   color: $black;
+}
 
-  .offers-button {
-    font-size: 21px;
-    font-weight: 700;
-    color: $white;
-    padding: 20px 45px;
-    background-color: $primary-color;
-  }
+.offers__offers-button {
+  margin-top: 35px;
+  margin-bottom: 45px;
+  font-size: 21px;
+  font-weight: 700;
+  color: $white;
+  padding: 20px 45px;
+  background-color: $primary-color;
+  border: none;
 }
 
 .offers__title {
   font-size: 21px;
   font-weight: 700;
+  text-align: center;
 }
 
 .offers__text {
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
   color: $black;
 }
 
