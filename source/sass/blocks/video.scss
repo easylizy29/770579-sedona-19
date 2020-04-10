@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   height: 460px;
   width: 320px;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .video__intro {
@@ -11,24 +11,18 @@
   flex-wrap: wrap;
   padding: 43px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 
   .video__intro-title {
-    font-size: 18px;
-    font-weight: 700;
+    @include font-set(18px, 26px, 700);
   }
 
   .video__intro-text {
-    font-size: 14px;
-    font-weight: 400;
+    @include font-set(14px, 21px, 400);
   }
 }
 
-.video-screen {
-
-}
-
-.video__image {
+.video__screen {
   height: 200px;
   width: 320px;
   background-image: url("../img/video-mobile@1x.jpg");
@@ -39,19 +33,7 @@
   flex-wrap: wrap;
 }
 
-.video__timeline {
-
-}
-
-.video__drag {
-
-}
-
 .video__wrapper-controls {
   display: flex;
   flex-wrap: wrap;
-}
-
-.video__control-item {
-
 }

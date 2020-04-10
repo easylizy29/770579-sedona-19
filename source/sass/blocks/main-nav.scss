@@ -1,35 +1,33 @@
 .main-nav {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 40px;
-  color: #ffffff;
-  background-color: #81b3d2;
+  @include font-set(18px, 40px, 700);
+  color: $white;
+  background-color: $primary-color;
 }
 
 .main-nav__close {
-  color: #ffffff;
+  color: $white;
 }
 
 .main-nav__list {
   list-style: none;
   text-transform: uppercase;
-}
 
-.main-nav__list {
   a {
-    color: #ffffff;
+    color: $white;
     list-style: none;
   }
 }
 
 .site-list__item {
   li {
+    background-color: $primary-color;
+    margin: 0;
     padding-top: 21px;
     padding-bottom: 21px;
   }
 }
 
 .site-list__item--active {
-  background-color: #81b3d2;
+  background-color: $primary-color;
   color: rgba(255, 255, 255, 0.3);
 }

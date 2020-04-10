@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  font-size: $font-size;
+  font-family: $font-primary;
+  color: $black;
+  background-color: $white;
+}

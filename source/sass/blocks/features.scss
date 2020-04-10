@@ -1,0 +1,106 @@
+.features__list {
+  height: 890px;
+  width: 320px;
+  background-color: $white;
+}
+
+.features__sublist {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 64px;
+  padding-bottom: 43px;
+}
+
+.features__info {
+  padding: 47px 27px;
+  width: 320px;
+  height: 210px;
+  background-color: $white;
+  color: $white;
+  text-transform: uppercase;
+
+  h2 {
+    @include font-set(21px, 26px, 700);
+  }
+}
+
+.features__title {
+  @include font-set(18px, 26px, 700);
+}
+
+.features__text {
+  @include font-set(14px, 21px, 400);
+}
+
+.features__image {
+  height: 260px;
+  width: 360px;
+  background-image: url("../img/main-city-mobile@1x.svg");
+}
+
+.features__item {
+  display: flex;
+  flex-wrap: wrap;
+  height: 112px;
+  width: 320px;
+  color: $black;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 950px;
+  width: 320px;
+  text-transform: uppercase;
+}
+
+.features__bridge {
+  height: 190px;
+  width: 320px;
+  background-color: $primary-color;
+
+  .features__info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 47px 30px;
+    color: $white;
+  }
+
+  .features__text {
+    @include font-set(14px, 21px, 400);
+  }
+
+  h3 {
+    @include font-set(18px, 26px, 700);
+  }
+}
+
+.features__info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 47px 30px;
+  color: $black;
+}
+
+.features__bridge-background {
+  height: 260px;
+  width: 320px;
+  background-image: url("../img/photo-bridge-tablet@1.jpg");
+}
+
+.features__item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.features__title {
+  @include font-set(18px, 26px, 700);
+  color: $black;
+}
+
+.features__text {
+  @include font-set(14px, 21px, 400);
+  color: $black;
+}

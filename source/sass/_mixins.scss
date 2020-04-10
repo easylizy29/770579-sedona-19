@@ -1,0 +1,10 @@
+@mixin list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin font-set($size, $line-height, $weight:null) {
+  font-size: $size;
+  line-height: floor($line-height / $size * 100) / 100;
+  font-weight: $weight;
+}

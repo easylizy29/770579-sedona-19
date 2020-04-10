@@ -3,21 +3,19 @@
   flex-wrap: wrap;
   height: 245px;
   width: 320px;
-  background-color: #fefefe;
+  background-color: $secondary-color;
 
   .hashtag {
-    font-size: 21px;
-    font-weight: 700;
-    color: #000000;
+    @include font-set(18px, 26px, 700);
+    color: $black;
   }
 }
 
 .page-footer__copyright {
+  @include font-set(14px, 21px, 400);
   display: flex;
   flex-wrap: nowrap;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000000;
+  color: $black;
 
   .copyright__link {
     height: 34px;

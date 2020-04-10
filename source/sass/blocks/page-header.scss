@@ -1,20 +1,21 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   width: 320px;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .page-header__top {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   width: 320px;
   height: 82px;
 }
 
 .logo {
-  padding-top: 20px;
-  padding-right: 20px;
+  margin: 0;
   width: 23px;
   height: 21px;
   background-image: url("../img/icon-menu.svg");
