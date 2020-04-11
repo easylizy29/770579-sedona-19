@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  width: 320px;
   background-color: $white;
 }
 
@@ -10,18 +9,18 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  width: 320px;
   height: 82px;
 }
 
 .page-header__menu-button {
+  @include button-throw;
   width: 23px;
   height: 21px;
   background-image: url("../img/icon-menu.svg");
 }
 
 .page-header__intro {
-  width: 320px;
   height: 390px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
 }

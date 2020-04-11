@@ -1,28 +1,17 @@
 .page-footer {
-  width: 320px;
   background-color: $secondary-color;
 
   .hashtag {
     @include font-set(18px, 26px, 700);
-    color: $black;
   }
 }
 
 .page-footer__list {
+  @include list-reset;
   display: flex;
-  flex-wrap: nowrap;
-  width: 320px;
   list-style: none;
 }
 
 .page-footer__copyright {
   @include font-set(14px, 21px, 400);
-  color: $black;
-}
-
-.copyright__link {
-  height: 34px;
-  width: 27px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
 }

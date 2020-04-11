@@ -11,19 +11,18 @@
 }
 
 .main-nav__list {
+  @include list-reset;
   list-style: none;
   text-transform: uppercase;
   text-align: center;
+}
 
-  a {
-    color: $white;
-    list-style: none;
-    text-decoration: none;
-  }
+a {
+  color: $white;
 }
 
 .site-list__item {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid $grey;
 }
 
 .site-list__item--active {

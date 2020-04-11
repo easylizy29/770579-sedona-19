@@ -10,7 +10,28 @@ body {
   flex-direction: column;
   word-wrap: break-word;
   font-size: $font-size;
+  line-height: 24px;
   font-family: $font-primary;
   color: $black;
   background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }

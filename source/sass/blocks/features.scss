@@ -3,6 +3,7 @@
 }
 
 .features__sublist {
+  @include list-reset;
   display: flex;
   flex-wrap: wrap;
   padding-top: 64px;
@@ -15,26 +16,23 @@
   color: $white;
   text-transform: uppercase;
 
-  h2 {
-    @include font-set(21px, 26px, 700);
-    color: $white;
-  }
-
   p {
     color: $white;
     text-transform: uppercase;
   }
 }
 
+.features__title {
+  @include font-set(21px, 26px, 700);
+}
+
 .features__text {
   @include font-set(14px, 21px, 400);
-  color: $black;
 }
 
 .features__item {
   display: flex;
   flex-wrap: wrap;
-  color: $black;
 
   .features__wrapper {
     background-color: $secondary-color;
@@ -49,9 +47,4 @@
   h3 {
     @include font-set(18px, 26px, 700);
   }
-}
-
-.features__title {
-  @include font-set(18px, 26px, 700);
-  color: $black;
 }

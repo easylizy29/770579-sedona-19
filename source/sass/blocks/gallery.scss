@@ -1,16 +1,12 @@
 .gallery {
   padding: 20px;
-  width: 320px;
   background-color: $white;
 }
 
 .gallery__list {
+  @include list-reset;
   display: flex;
   flex-wrap: wrap;
-
-  .gallery__list {
-    list-style: none;
-  }
 }
 
 .gallery__item {
@@ -20,33 +16,28 @@
   border-bottom: 1px #e5e5e5;
 }
 
-.gallery__open-spaces,
-.gallery__native-vegetation,
-.gallery__road-north,
-.gallery__devels-bridge {
+.gallery__info {
   margin: 22px;
 }
 
-.gallery__sublist {
+.gallery__caption {
   display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.gallery__sublist-item {
+.gallery__caption-item {
   text-align: left;
 }
 
 .gallery__title {
   @include font-set(14px, 21px, 700);
   text-transform: uppercase;
-  color: $black;
 }
 
 .gallery__text {
   @include font-set(14px, 21px, 700);
-  color: $black;
 }
 
 .gallery__assessment {
@@ -55,5 +46,5 @@
 }
 
 .gallery__assessment-button {
-  border: none;
+  @include button-throw;
 }

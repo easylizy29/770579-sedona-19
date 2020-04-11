@@ -1,4 +1,6 @@
 @mixin list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
@@ -7,4 +9,10 @@
   font-size: $size;
   line-height: floor($line-height / $size * 100) / 100;
   font-weight: $weight;
+}
+
+@mixin button-throw {
+  border: 0;
+  padding: 0;
+  background-color: 0;
 }

@@ -2,10 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  width: 320px;
   height: 1625px;
   background-color: $white;
-  color: $black;
 }
 
 .review-form__item {
@@ -93,11 +91,10 @@
 }
 
 .review-form__button {
+  @include button-throw;
   @include font-set(18px, 26px, 700);
-  padding: 22px;
   height: 160px;
   width: 280px;
   text-align: center;
   color: $white;
-  background-color: $primary-color;
 }
