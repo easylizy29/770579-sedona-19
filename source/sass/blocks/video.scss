@@ -1,6 +1,4 @@
 .video {
-  display: flex;
-  flex-wrap: wrap;
   height: 460px;
   background-color: $white;
 }
@@ -20,21 +18,11 @@
   }
 }
 
-.video__screen {
-  height: 200px;
-  background-image: url("../img/video-mobile@1x.jpg");
-}
-
 .video__controles {
-  display: flex;
-  flex-wrap: wrap;
+  position: absolute
 }
 
 .video__wrapper-controls {
   display: flex;
   flex-wrap: wrap;
-}
-
-.video__control-item {
-  display: flex;
 }
