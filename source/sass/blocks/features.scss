@@ -9,8 +9,8 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 64px;
-  padding-bottom: 43px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .features__item {
@@ -26,7 +26,6 @@
   display: flex;
   flex-wrap: wrap;
   background-repeat: no-repeat;
-    margin: 10px 10px 10px 10px;
 
   &--house {
     background-size: 39px 37px;
@@ -42,6 +41,16 @@
     background-size: 40px 35px;
     background-image: url("../img/icon-burger.svg");
   }
+}
+
+.features__sublist .features__title {
+  margin: 0 0 25px 70px;
+}
+
+.features__sublist.features__text {
+  margin-top: 0;
+  margin-left: 70px;
+  margin-right: 0;
 }
 
 .features__info {

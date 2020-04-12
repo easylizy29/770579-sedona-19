@@ -18,11 +18,45 @@
   }
 }
 
+.video__player {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .video__controles {
-  position: absolute
+  position: absolute;
 }
 
 .video__wrapper-controls {
   display: flex;
   flex-wrap: wrap;
+  background-color: $secondary-color;
+}
+
+.video__wrapper-controls .video__control-item {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.video__control-item {
+  display: flex;
+  flex-wrap: nowrap;
+  background-repeat: no-repeat;
+
+  &--fullscreen {
+    background-image: url("../img/icon-video-fullscreen.svg");
+    background-size: 32px 20px;
+  }
+
+  &--subtitles {
+    background-image: url("../img/icon-video-subtitles.svg");
+    background-size: 16px 20px;
+  }
+
+  &--replay {
+    background-image: url("../img/icon-video-replay.svg");
+    background-size: 32px 20px;
+  }
 }

@@ -1,9 +1,10 @@
 .page-footer {
-  background-color: $secondary-color;
+  background-color: $white;
+}
 
-  .hashtag {
-    @include font-set(18px, 26px, 700);
-  }
+.page-footer__hashtag {
+  @include font-set(18px, 26px, 700);
+  text-transform: uppercase;
 }
 
 .page-footer__list {
