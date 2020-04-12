@@ -20,13 +20,13 @@
 
 .features__sublist .features__item {
   width: 100%;
-  margin: 0 0 0 0;
 }
 
 .features__item {
   display: flex;
   flex-wrap: wrap;
   background-repeat: no-repeat;
+    margin: 10px 10px 10px 10px;
 
   &--house {
     background-size: 39px 37px;
