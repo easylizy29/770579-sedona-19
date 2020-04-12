@@ -8,19 +8,23 @@
 .page-header__top {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  height: 82px;
+  margin-bottom: -30px;
+  z-index: 0;
 }
 
 .page-header__menu-button {
   @include button-throw;
+  margin-left: 65px;
+  margin-top: 15px;
   width: 23px;
   height: 21px;
   background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
 }
 
 .page-header__intro {
-  height: 390px;
+  width: 100%;
+  height: 160px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
 }

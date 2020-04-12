@@ -6,7 +6,7 @@
 .video__intro {
   display: flex;
   flex-wrap: wrap;
-  padding: 43px;
+  padding: 40px;
   text-transform: uppercase;
 
   .video__intro-title {
@@ -18,6 +18,11 @@
   }
 }
 
+.video__screen {
+  margin: 0;
+  padding: 0;
+}
+
 .video__player {
   display: flex;
   flex-wrap: wrap;
@@ -25,38 +30,45 @@
 
 .video__controles {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .video__wrapper-controls {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
   background-color: $secondary-color;
 }
 
 .video__wrapper-controls .video__control-item {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .video__control-item {
+  @include button-throw;
   display: flex;
   flex-wrap: nowrap;
   background-repeat: no-repeat;
 
-  &--fullscreen {
-    background-image: url("../img/icon-video-fullscreen.svg");
+  &--replay {
+    margin-left: 25px;
+    background-image: url("../img/icon-video-replay.svg");
     background-size: 32px 20px;
   }
 
   &--subtitles {
+    margin-left: 130px;
     background-image: url("../img/icon-video-subtitles.svg");
     background-size: 16px 20px;
   }
 
-  &--replay {
-    background-image: url("../img/icon-video-replay.svg");
+  &--fullscreen {
+    margin-left: 30px;
+    background-image: url("../img/icon-video-fullscreen.svg");
     background-size: 32px 20px;
   }
 }
