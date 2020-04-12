@@ -1,16 +1,11 @@
 .review__form {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  height: 1625px;
+  align-items: flex-end;
   background-color: $white;
 }
 
 .review-form__item {
-  display: flex;
-  flex-wrap: nowrap;
-  border-top: 1px solid $grey;
-  border-bottom: 1px solid $grey;
+  width: 100%;
+  border: none;
 }
 
 .review-form__title {
@@ -21,7 +16,6 @@
 .review-form__label {
   @include font-set(14px, 21px, 400);
   min-width: 170px;
-  padding: 10px;
   text-transform: uppercase;
   color: $grey;
 }
@@ -34,15 +28,18 @@
 
 .review-from__input-wrapper {
   width: 58px;
-  background-color: $secondary-color;
 }
 
 .review-form__input {
   @include font-set(18px, 26px, 700);
+  width: 190px;
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 22px;
   background-color: $secondary-color;
+  color: $black;
+  border: none;
 }
 
 .review-form__phone-icon {
@@ -91,10 +88,11 @@
 }
 
 .review-form__button {
-  @include button-throw;
   @include font-set(18px, 26px, 700);
+  padding: 22px;
   height: 160px;
   width: 280px;
   text-align: center;
   color: $white;
+  background-color: $primary-color;
 }

@@ -1,6 +1,4 @@
 .offers {
-  display: flex;
-  flex-wrap: wrap;
   padding: 35px 20px 50px;
   background-color: $white;
   text-transform: uppercase;
@@ -8,8 +6,11 @@
 
 .offers__button {
   @include button-throw;
-  margin-top: 35px;
-  margin-bottom: 45px;
+  width: 100%;
+  height: 55px;
+  background-color: $primary-color;
+  text-transform: uppercase;
+  margin-bottom: 30px;
   font-size: 21px;
   font-weight: 700;
   color: $white;
