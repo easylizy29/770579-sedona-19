@@ -6,6 +6,8 @@
 }
 
 .main-nav__close {
+  @include button-throw;
+  position: absolute;
   width: 23px;
   height: 22px;
   background-image: url("../img/icon-cross.svg");
