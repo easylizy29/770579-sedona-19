@@ -22,6 +22,10 @@
   text-transform: uppercase;
 }
 
+.review-form__group {
+  display: flex;
+}
+
 .review-form__label {
   @include font-set(14px, 21px, 400);
   min-width: 170px;
@@ -41,7 +45,7 @@
 
 .review-form__input {
   @include font-set(18px, 26px, 700);
-  width: 190px;
+  width: 100%;
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -83,15 +87,36 @@
   width: 46px;
 }
 
-.review-form__label-check {
-  @include font-set(18px, 26px, 700);
-}
-
-.review-form__label-check::before {
+.review-form__checkbox:checked + label::after {
+  display: block;
+  position: absolute;
   height: 46px;
   width: 46px;
   background-image: url("../img/icon-tick.svg");
+  background-color: $secondary-color;
   background-repeat: no-repeat;
+}
+
+.review-form__label-check {
+  @include font-set(18px, 26px, 700);
+  padding-left: 70px;
+  padding-bottom: 25px;
+  margin-bottom: -13px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.review-form__label-check::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  margin-top: -35px;
+  height: 46px;
+  width: 46px;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .review-form__textarea {
