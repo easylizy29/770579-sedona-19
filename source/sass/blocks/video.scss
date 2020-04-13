@@ -53,22 +53,17 @@
   display: flex;
   flex-wrap: nowrap;
   background-repeat: no-repeat;
+  cursor: pointer;
 
   &--replay {
     margin-left: 25px;
-    background-image: url("../img/icon-video-replay.svg");
-    background-size: 32px 20px;
   }
 
   &--subtitles {
     margin-left: 130px;
-    background-image: url("../img/icon-video-subtitles.svg");
-    background-size: 16px 20px;
   }
 
   &--fullscreen {
     margin-left: 30px;
-    background-image: url("../img/icon-video-fullscreen.svg");
-    background-size: 32px 20px;
   }
 }
