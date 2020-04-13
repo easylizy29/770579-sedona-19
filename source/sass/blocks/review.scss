@@ -80,6 +80,36 @@
 
 .review-form__label-radio {
   @include font-set(18px, 26px, 700);
+  padding-left: 70px;
+  padding-bottom: 25px;
+  margin-bottom: -13px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.review-form__label-radio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  margin-top: -35px;
+  height: 46px;
+  width: 46px;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.review-form__radio:checked + label::after {
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-color: $black;
+  background-repeat: no-repeat;
+  border: 16px solid $secondary-color;
+  border-radius: 50px;
 }
 
 .review-form__checkbox {
@@ -95,6 +125,7 @@
   background-image: url("../img/icon-tick.svg");
   background-color: $secondary-color;
   background-repeat: no-repeat;
+  border-radius: 5px;
 }
 
 .review-form__label-check {
@@ -116,6 +147,7 @@
   width: 46px;
   background-color: $secondary-color;
   background-repeat: no-repeat;
+  border-radius: 5px;
   cursor: pointer;
 }
 
