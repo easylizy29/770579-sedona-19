@@ -1,0 +1,89 @@
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include list-reset;
+  background-color: $white;
+}
+
+.features__sublist {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.features__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 70px;
+}
+
+.features__sublist .features__item {
+  width: 100%;
+}
+
+.features__item {
+  display: flex;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+
+  &--house {
+    background-size: 39px 37px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--gifts {
+    background-size: 32px 37px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--burger {
+    background-size: 40px 35px;
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.features__sublist .features__title {
+  margin-bottom: 25px;
+}
+
+.features__sublist.features__text {
+  margin-top: 0;
+  margin-left: 70px;
+  margin-right: 0;
+}
+
+.features__info {
+  padding: 47px 27px;
+  background-color: $primary-color;
+  color: $white;
+  text-transform: uppercase;
+
+  p {
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.features__title {
+  @include font-set(18px, 26px, 700);
+}
+
+.features__text {
+  @include font-set(14px, 21px, 400);
+}
+
+.features__wrapper {
+  background-color: $secondary-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.features__bridge {
+  background-color: $primary-color;
+
+  h3 {
+    @include font-set(18px, 26px, 700);
+  }
+}

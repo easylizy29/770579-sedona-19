@@ -1,0 +1,32 @@
+.offers {
+  padding: 35px 20px 50px;
+  background-color: $white;
+  text-transform: uppercase;
+}
+
+.offers__button {
+  @include button-throw;
+  width: 100%;
+  height: 55px;
+  background-color: $primary-color;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 700;
+  color: $white;
+}
+
+.offers__title {
+  @include font-set(21px, 40px, 700);
+  text-align: center;
+}
+
+.offers__text {
+  @include font-set(18px, 24px, 400);
+  text-align: center;
+}
+
+.offers__map {
+  height: 350px;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+}

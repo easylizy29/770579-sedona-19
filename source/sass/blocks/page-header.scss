@@ -1,0 +1,29 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  background-color: $white;
+}
+
+.page-header__top {
+  width: 100%;
+  height: 85px;
+}
+
+.page-header__menu-button {
+  @include button-throw;
+  margin-left: 65px;
+  margin-top: 15px;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__intro {
+  padding-left: 17px;
+  width: 100%;
+  height: 160px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+}

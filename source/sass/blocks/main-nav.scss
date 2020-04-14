@@ -1,0 +1,38 @@
+.main-nav {
+  @include font-set(18px, 40px, 700);
+  width: 100%;
+  color: $white;
+  background-color: $primary-color;
+}
+
+.main-nav__close {
+  @include button-throw;
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icon-cross.svg");
+}
+
+.main-nav__list {
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+a {
+  color: $white;
+}
+
+.site-list {
+@include list-reset;
+}
+
+.site-list__item {
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+}
+
+.site-list__item--active {
+  background-color: $primary-color;
+  color: rgba(255, 255, 255, 0.3);
+}
