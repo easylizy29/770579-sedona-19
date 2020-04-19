@@ -15,4 +15,5 @@
 .lead__text {
   @include font-set(14px, 26px, 400);
   text-transform: uppercase;
+  text-align: center;
 }

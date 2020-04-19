@@ -12,6 +12,26 @@
   flex-wrap: wrap;
 }
 
+.gallery__list__page-wrapper {
+  @include list-reset;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__list__page-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__list__page-wrapper {
+    width: 1200px;
+  }
+}
+
 .gallery__item {
   display: flex;
   flex-wrap: wrap;
@@ -20,7 +40,7 @@
 }
 
 .gallery__caption {
-  width:  100%;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 }

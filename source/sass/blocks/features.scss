@@ -1,7 +1,7 @@
 .features__list {
+  @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  @include list-reset;
   background-color: $white;
 }
 
@@ -13,14 +13,9 @@
   padding-bottom: 40px;
 }
 
-.features__item {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 70px;
-}
-
 .features__sublist .features__item {
   width: 100%;
+  padding-left: 70px;
 }
 
 .features__item {
@@ -55,10 +50,12 @@
 }
 
 .features__info {
+  min-height: 210px;
   padding: 47px 27px;
   background-color: $primary-color;
   color: $white;
   text-transform: uppercase;
+  text-align: center;
 
   p {
     color: $white;

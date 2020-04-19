@@ -2,6 +2,26 @@
   background-color: $white;
 }
 
+.review__form__page-wrapper {
+  @include list-reset;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .review__form__page-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__form__page-wrapper {
+    width: 1200px;
+  }
+}
+
 .review-form__item {
   width: 100%;
   border: none;

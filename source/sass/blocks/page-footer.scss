@@ -9,10 +9,24 @@
   text-transform: uppercase;
 }
 
-.page-footer__list {
+.page-footer__list__page-wrapper {
   @include list-reset;
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__list__page-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__list__page-wrapper {
+    width: 1200px;
+  }
 }
 
 .page-footer__copyright {
