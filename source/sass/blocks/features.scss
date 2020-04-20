@@ -21,6 +21,7 @@
 .features__item {
   display: flex;
   flex-wrap: wrap;
+  width: 33,3334%;
   background-repeat: no-repeat;
 
   &--house {
@@ -42,6 +43,10 @@
     width: 100%;
     flex-direction: row-reverse;
   }
+}
+
+.features__image {
+  width: 66,666%;
 }
 
 .features__sublist .features__title {

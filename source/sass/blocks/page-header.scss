@@ -21,10 +21,10 @@
 .page-header__menu-button {
   @include button-throw;
   position: absolute;
-  left: 285px;
+  left: 280px;
   margin-top: 15px;
   width: 23px;
-  height: 21px;
+  height: 23px;
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
 
@@ -39,11 +39,12 @@
 
 .page-header__intro {
   display: flex;
-  align-items: center;
-  height: 160px;
+  justify-content: center;
+  height: 388px;
   width: 320px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: 360px 160px;
+  background-size: auto;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     width: 768px;

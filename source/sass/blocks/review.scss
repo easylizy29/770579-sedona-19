@@ -25,11 +25,16 @@
   &--radio {
     display: flex;
     flex-wrap: wrap;
+    width: 50%;
   }
 
   &--checkbox {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  &--name {
+    width: 50%;
   }
 }
 

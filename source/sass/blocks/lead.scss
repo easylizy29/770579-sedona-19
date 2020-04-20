@@ -10,6 +10,7 @@
 .lead__title {
   @include font-set(18px, 26px, 700);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .lead__text {
