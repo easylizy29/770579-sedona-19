@@ -1,4 +1,6 @@
-.logo__logo-image {
+.logo {
   position: absolute;
-  margin-left: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }

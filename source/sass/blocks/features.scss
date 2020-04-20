@@ -37,6 +37,11 @@
     background-size: 40px 35px;
     background-image: url("../img/icon-burger.svg");
   }
+
+  &--big:nth-child(2n) {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
 }
 
 .features__sublist .features__title {
@@ -75,12 +80,4 @@
   background-color: $secondary-color;
   text-transform: uppercase;
   text-align: center;
-}
-
-.features__bridge {
-  background-color: $primary-color;
-
-  h3 {
-    @include font-set(18px, 26px, 700);
-  }
 }

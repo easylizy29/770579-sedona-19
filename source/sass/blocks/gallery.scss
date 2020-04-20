@@ -18,16 +18,12 @@
   list-style: none;
   justify-content: space-between;
   margin: 0 auto;
-}
 
 @media (min-width: $tablet-width) {
-  .gallery__list__page-wrapper {
     width: 768px;
   }
-}
 
 @media (min-width: $desktop-width) {
-  .gallery__list__page-wrapper {
     width: 1200px;
   }
 }

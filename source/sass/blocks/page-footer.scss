@@ -17,18 +17,6 @@
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) {
-  .page-footer__list__page-wrapper {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__list__page-wrapper {
-    width: 1200px;
-  }
-}
-
 .page-footer__copyright {
   @include font-set(14px, 26px, 400);
   text-transform: uppercase;
