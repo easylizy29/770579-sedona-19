@@ -1,6 +1,9 @@
 .page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
   margin-top: 40px;
-  padding-top: 40px;
   background-color: $white;
 }
 

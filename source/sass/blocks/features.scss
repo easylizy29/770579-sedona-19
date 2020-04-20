@@ -15,28 +15,30 @@
 
 .features__sublist .features__item {
   width: 100%;
-  padding-left: 70px;
+  padding-left: 50px;
 }
 
 .features__item {
   display: flex;
   flex-wrap: wrap;
-  width: 33,3334%;
   background-repeat: no-repeat;
 
   &--house {
     background-size: 39px 37px;
     background-image: url("../img/icon-house.svg");
+    margin-left: 20px;
   }
 
   &--gifts {
     background-size: 32px 37px;
     background-image: url("../img/icon-gift.svg");
+    margin-left: 20px;
   }
 
   &--burger {
     background-size: 40px 35px;
     background-image: url("../img/icon-burger.svg");
+    margin-left: 20px;
   }
 
   &--big:nth-child(2n) {
@@ -51,6 +53,7 @@
 
 .features__sublist .features__title {
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .features__sublist.features__text {
@@ -60,7 +63,7 @@
 }
 
 .features__info {
-  min-height: 210px;
+  min-height: 115px;
   padding: 47px 27px;
   background-color: $primary-color;
   color: $white;
@@ -75,10 +78,13 @@
 
 .features__title {
   @include font-set(18px, 26px, 700);
+  text-transform: uppercase;
 }
 
 .features__text {
   @include font-set(14px, 21px, 400);
+  text-transform: uppercase;
+  padding-bottom: 20px;
 }
 
 .features__wrapper {

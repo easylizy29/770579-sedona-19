@@ -1,16 +1,17 @@
 .offers {
-  padding: 35px 20px 50px;
   background-color: $white;
   text-transform: uppercase;
 }
 
 .offers__button {
   @include button-throw;
-  width: 100%;
+  margin-left: 20px;
+  width: 280px;
   height: 55px;
   background-color: $primary-color;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 50px;
   font-size: 21px;
   font-weight: 700;
   color: $white;
@@ -22,13 +23,16 @@
 }
 
 .offers__text {
-  @include font-set(18px, 24px, 400);
+  @include font-set(14px, 24px, 400);
   text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .offers__map {
   background-image: url("../img/bg-map-mobile@1x.jpg");
-
+  width: 100%;
+  min-height: 350px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-map-tablet@1x.jpg");
