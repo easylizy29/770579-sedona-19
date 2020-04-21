@@ -1,7 +1,16 @@
 .intro {
-  margin-top: 55px;
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .intro__image {
-  padding-top: 20px;
+  width: 300px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    width: 460px;
+    height: auto;
+  }
 }
