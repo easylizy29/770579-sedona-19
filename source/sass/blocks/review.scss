@@ -1,4 +1,8 @@
 .review__form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: $white;
 }
 
@@ -19,18 +23,18 @@
 }
 
 .review-form__item {
-  width: 100%;
   border: none;
 
   &--radio {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    padding-left: 60px;
   }
 
   &--checkbox {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
 
   &--name {
@@ -41,15 +45,17 @@
 .review-form__title {
   @include font-set(18px, 26px, 700);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .review-form__group {
   display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .review-form__label {
   @include font-set(14px, 21px, 400);
-  min-width: 170px;
   text-transform: uppercase;
   color: $grey;
 }
@@ -66,14 +72,31 @@
 
 .review-form__input {
   @include font-set(18px, 26px, 700);
-  width: 100%;
+  width: 170px;
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
+  margin-left: 15px;
   background-color: $secondary-color;
   color: $black;
   border: none;
+
+  &--long {
+    width: 210px;
+  }
+
+  &--name {
+    width: 210px;
+  }
+
+  &--phone {
+    width: 225px;
+  }
+
+  &--email {
+    width: 225px;
+  }
 }
 
 .review-form__phone-icon {
@@ -101,7 +124,6 @@
 
 .review-form__label-radio {
   @include font-set(18px, 26px, 700);
-  padding-left: 70px;
   padding-bottom: 25px;
   margin-bottom: -13px;
   margin-top: 22px;
@@ -144,6 +166,7 @@
   height: 46px;
   width: 46px;
   background-image: url("../img/icon-tick.svg");
+  background-position: center;
   background-color: $secondary-color;
   background-repeat: no-repeat;
   border-radius: 5px;
@@ -176,18 +199,21 @@
   @include font-set(18px, 26px, 700);
   padding-left: 20px;
   padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   min-height: 140px;
-  width: 280px;
+  width: 270px;
   background-color: $secondary-color;
+  border: none;
 }
 
 .review-form__button {
   @include button-throw;
-  width: 100%;
+  width: 280px;
   height: 55px;
   background-color: $primary-color;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 21px;
   font-weight: 700;
   color: $white;

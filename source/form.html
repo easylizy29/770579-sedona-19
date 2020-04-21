@@ -31,7 +31,7 @@
         <button class="page-header__menu-button">
         </button>
       </div>
-      <div class="page-header__intro intro">
+      <div class="page-header__intro--short intro">
         <img class="intro__image" src="img/text-sedona.svg" width="229" height="39" alt="Заголовок Седоны">
       </div>
     </header>
@@ -47,7 +47,7 @@
           <legend class="review-form__title">Представьтесь:</legend>
           <div class="review-form__group">
             <label class="review-form__label" for="your-name">Имя<sup>*</sup>:</label>
-            <input class="review-form__input" type="text" name="your-name" id="your-name" placeholder="Ваше имя" required>
+            <input class="review-form__input review-form__input--long" type="text" name="your-name" id="your-name" placeholder="Ваше имя" required>
           </div>
           <div class="review-form__group">
             <label class="review-form__label" for="your-surname">Фамилия<sup>*</sup>:</label>
@@ -58,14 +58,14 @@
             <input class="review-form__input" type="text" name="patronymic" id="patronymic" placeholder="Ваше отчество" required>
           </div>
         </fieldset>
-        <fieldset class="review-form__item">
+        <fieldset class="review-form__item review-form__item--contacts">
           <legend class="review-form__title">Контактная информация</legend>
           <label class="review-form__phone" for="phone">Контактный телефон<sup>*</sup>:</label>
-          <p class="review-from__input-wrapper"><input class="review-form__input" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+          <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--phone" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
             <span class="review-form__phone-icon"></span>
           </p>
           <label class="review-form__email" for="email">Электронная почта<sup>*</sup>:</label>
-          <p class="review-from__input-wrapper"><input class="review-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+          <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--email" type="text" name="email" id="email" placeholder="Введите e-mail" required>
             <span class="review-form__email-icon"></span>
           </p>
         </fieldset>
