@@ -31,8 +31,7 @@
 .gallery__item {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px #e5e5e5;
-  border-bottom: 1px #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .gallery__caption {

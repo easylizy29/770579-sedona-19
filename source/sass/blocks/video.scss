@@ -6,7 +6,8 @@
 .video__intro {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px;
+  justify-content: center;
+  padding: 20px;
   text-transform: uppercase;
 
   .video__intro-title {
@@ -15,11 +16,12 @@
 
   .video__intro-text {
     @include font-set(14px, 21px, 400);
+  text-align: center;
   }
 }
 
 .video__screen {
-  margin: 0;
+  margin-bottom: -7px;
   padding: 0;
 }
 
@@ -39,7 +41,8 @@
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 100%;
+  margin-left: 20px;
+  width: 280px;
   background-color: $secondary-color;
 }
 
