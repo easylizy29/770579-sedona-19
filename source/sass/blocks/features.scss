@@ -33,6 +33,13 @@
   flex-wrap: wrap;
   background-repeat: no-repeat;
 
+
+&--grey {
+  @media (min-width: $tablet-width) {
+    width: 33.2%;
+  }
+}
+
   &--house {
     background-size: 39px 37px;
     background-image: url("../img/icon-house.svg");

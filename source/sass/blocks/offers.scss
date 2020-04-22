@@ -1,6 +1,13 @@
 .offers {
   background-color: $white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .offers__button {
@@ -15,6 +22,11 @@
   font-size: 21px;
   font-weight: 700;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 485px;
+    margin: 0 0 50px 0;
+  }
 }
 
 .offers__title {
@@ -27,6 +39,11 @@
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
 }
 
 .offers__map {
