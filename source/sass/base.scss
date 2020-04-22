@@ -13,7 +13,8 @@ body {
   line-height: 24px;
   font-family: $font-primary;
   color: $black;
-  background-color: $white;
+  background-color: $secondary-color;
+  box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2);
 }
 
 a {

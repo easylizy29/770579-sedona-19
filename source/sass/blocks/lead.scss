@@ -4,6 +4,10 @@
   justify-content: center;
   padding: 33px 10px;
   background-color: $white;
+
+    @media (min-width: $desktop-width) {
+       flex-direction: column;
+    }
 }
 
 .lead__title {

@@ -18,4 +18,11 @@
     left: 50%;
     transform: translateY(-50%);
   }
+
+  @media (min-width: $desktop-width) {
+    left: 50%;
+    transform: translateY(-50%);
+    width: 102px;
+    height: 83px;
+  }
 }
