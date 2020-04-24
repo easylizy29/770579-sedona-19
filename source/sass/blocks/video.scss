@@ -11,9 +11,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 
   .video__intro-title {
     @include font-set(18px, 26px, 700);

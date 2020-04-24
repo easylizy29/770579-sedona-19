@@ -1,12 +1,8 @@
-.intro {
-  @media (min-width: $tablet-width) {
-    margin-top: 20px;
-  }
-}
-
 .intro__image {
   width: 300px;
   height: auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 460px;

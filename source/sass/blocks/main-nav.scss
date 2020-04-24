@@ -6,15 +6,12 @@
   color: $white;
   background-color: $primary-color;
 
-
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     @include font-set(14px, 40px, 700);
-    position: static;
     background-color: $white;
   }
 
-@media (min-width: $desktop-width) {
-    position: static;
+  @media (min-width: $desktop-width) {
     background-color: $white;
   }
 }
@@ -28,11 +25,11 @@
   height: 22px;
   background-image: url("../img/icon-cross.svg");
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 
-@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -42,23 +39,23 @@
   text-transform: uppercase;
   text-align: center;
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-@media (min-width: $desktop-width) {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 a {
   color: $white;
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     color: $black;
   }
 }
@@ -82,16 +79,32 @@ a {
 }
 
 .site-list__item {
-  width: 100%;
-  border-top: 1px solid $border-top;
-  border-bottom: 1px solid $border-bottom;
 
   &--active {
     background-color: $primary-color;
     color: rgba(255, 255, 255, 0.3);
   }
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    padding: 12px 0;
+    border: none;
+
+    &--active {
+      background-color: $white;
+      color: $brown;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     border: none;
 
     &--active {
@@ -109,23 +122,11 @@ a {
       padding-left: 40px;
     }
   }
+}
 
-@media (min-width: $desktop-width) {
-    border: none;
+.site-list__item:nth-child(2) {
 
-    &--active {
-      background-color: $white;
-      color: $brown;
-    }
-
-    &--left {
-      margin-right: 35px;
-      padding-right: 40px;
-    }
-
-    &--right {
-      margin-left: 35px;
-      padding-left: 40px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-right: 20%;
   }
 }

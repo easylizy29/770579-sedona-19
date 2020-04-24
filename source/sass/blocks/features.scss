@@ -3,6 +3,29 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $white;
+  counter-increment: list;
+}
+
+// .features__reason {
+//     counter-increment: list;
+// }
+//
+// .features__reason::after {
+//     content: counter(.features__list) "-№1-";
+// }
+
+.review-form__label-radio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  margin-top: -35px;
+  height: 46px;
+  width: 46px;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .features__sublist {
@@ -19,7 +42,10 @@
 
 .features__sublist .features__item {
   width: 100%;
+  margin: 0;
   padding-left: 50px;
+  justify-content: center;
+  background-position: center top;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -33,12 +59,11 @@
   flex-wrap: wrap;
   background-repeat: no-repeat;
 
-
-&--grey {
-  @media (min-width: $tablet-width) {
-    width: 33.2%;
+  &--grey {
+    @media (min-width: $tablet-width) {
+      width: 33.2%;
+    }
   }
-}
 
   &--house {
     background-size: 39px 37px;
@@ -47,9 +72,6 @@
 
     @media (min-width: $tablet-width) {
       background-size: 30%;
-      justify-content: center;
-      margin: 0;
-      background-position: center;
       order: 1;
     }
 
@@ -65,9 +87,6 @@
 
     @media (min-width: $tablet-width) {
       background-size: 25%;
-      justify-content: center;
-      margin: 0;
-      background-position: center;
       order: 3;
     }
 
@@ -83,11 +102,14 @@
 
     @media (min-width: $tablet-width) {
       background-size: 30%;
-      justify-content: center;
-      margin: 0;
-      background-position: center;
       order: 2;
     }
+  }
+
+  &--big {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   &--big:nth-child(2n) {
@@ -100,13 +122,13 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 69%;
+    width: 66.6667%;
     height: 260px;
   }
 
-    @media (min-width: $desktop-width) {
-      width: 65%;
-      height: 260px;
+  @media (min-width: $desktop-width) {
+    width: 65%;
+    height: 260px;
   }
 }
 
@@ -134,13 +156,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 23%;
-    height: auto;
+    width: 33.3334%;
   }
 
   @media (min-width: $desktop-width) {
     width: 30%;
-    height: auto;
   }
 }
 

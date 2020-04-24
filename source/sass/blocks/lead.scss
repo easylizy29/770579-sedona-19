@@ -5,9 +5,9 @@
   padding: 33px 10px;
   background-color: $white;
 
-    @media (min-width: $desktop-width) {
-       padding: 33px 165px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 33px 165px;
+  }
 }
 
 .lead__title {
@@ -16,7 +16,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-     @include font-set(18px, 26px, 700);
+    @include font-set(18px, 26px, 700);
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 
