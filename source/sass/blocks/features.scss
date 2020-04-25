@@ -3,16 +3,13 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $white;
-  counter-increment: list;
+  counter-reset: section;
 }
 
-// .features__reason {
-//     counter-increment: list;
-// }
-//
-// .features__reason::after {
-//     content: counter(.features__list) "-№1-";
-// }
+.features__reason::after {
+  counter-increment: section;
+  content: "&mdash;&nbsp;"features__reason"&nbsp;&mdash;" counter(section);
+}
 
 .review-form__label-radio::after {
   content: "";
@@ -42,15 +39,15 @@
 
 .features__sublist .features__item {
   width: 100%;
-  margin: 0;
   padding-left: 50px;
-  justify-content: center;
-  background-position: center top;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin: 0;
     padding-top: 120px;
     padding-left: 0;
+    justify-content: center;
+    background-position: center top;
   }
 }
 
@@ -123,12 +120,7 @@
 
   @media (min-width: $tablet-width) {
     width: 66.6667%;
-    height: 260px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 65%;
-    height: 260px;
+    height: 255px;
   }
 }
 

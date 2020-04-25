@@ -17,6 +17,12 @@
 
   .video__intro-title {
     @include font-set(18px, 26px, 700);
+
+    @media (min-width: $tablet-width) {
+      @include font-set(30px, 26px, 700);
+      padding-left: 250px;
+      padding-right: 250px;
+    }
   }
 
   .video__intro-text {
@@ -38,7 +44,7 @@
   justify-content: center;
 }
 
-.video__controles {
+.video__controls {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
