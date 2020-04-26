@@ -3,6 +3,7 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
   background-color: $white;
 }
 
@@ -29,23 +30,76 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      order: -2;
+    }
   }
 
   &--checkbox {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
   }
 
   &--name {
-    width: 50%;
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      order: -1;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
   }
 }
 
 .review-form__title {
   @include font-set(18px, 26px, 700);
   text-transform: uppercase;
-  text-align: center;
+
+  &--radio {
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
+  }
 }
 
 .review-form__group {
