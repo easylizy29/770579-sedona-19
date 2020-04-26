@@ -8,6 +8,10 @@
 .social__item {
   margin-right: 5px;
   margin-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__link {
