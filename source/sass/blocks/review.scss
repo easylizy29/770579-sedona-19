@@ -4,9 +4,14 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
+  margin: 0;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    padding: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 60px;
   }
 }
@@ -21,6 +26,10 @@
 
 .review-form__item {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
 
   &--radio {
     display: flex;
@@ -70,7 +79,11 @@
 
 .review-form__title {
   @include font-set(18px, 26px, 700);
+  padding-bottom: 20px;
   text-transform: uppercase;
+    @media (min-width: $tablet-width) {
+      @include font-set(21px, 26px, 700);
+    }
 
   &--radio {
     @media (min-width: $tablet-width) {
@@ -85,13 +98,21 @@
   }
 
   &--checkbox {
+    text-align: center;
+
     @media (min-width: $tablet-width) {
       padding: 0 150px;
       text-align: center;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 350px;
+    }
   }
 
   &--textarea {
+    text-align: center;
+
     @media (min-width: $tablet-width) {
       text-align: center;
     }
@@ -107,16 +128,42 @@
 .review-form__set {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   width: 100%;
-  margin: 0;
-  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.review-form__set-check {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .review-form__group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0;
   margin: 0;
 }
@@ -125,6 +172,10 @@
   @include font-set(14px, 21px, 400);
   text-transform: uppercase;
   color: $grey;
+
+  &--name {
+    padding-right: 20px;
+  }
 }
 
 .review-form__phone {
@@ -134,9 +185,12 @@
 }
 
 .review-from__input-wrapper {
-  width: 58px;
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
   }
 }
 
@@ -151,8 +205,16 @@
   color: $black;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    width: 180px;
+  }
+
   &--long {
     width: 210px;
+
+    @media (min-width: $tablet-width) {
+      width: 230px;
+    }
   }
 
   &--name {
@@ -259,6 +321,7 @@
 .review-form__textarea {
   @include font-set(18px, 26px, 700);
   padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   margin-top: 20px;
   margin-bottom: 40px;

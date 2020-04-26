@@ -46,28 +46,30 @@
         <fieldset class="review-form__item review-form__item--name">
           <legend class="review-form__title review-form__item--name">Представьтесь:</legend>
           <div class="review-form__group">
-            <label class="review-form__label" for="your-name">Имя<sup>*</sup>:</label>
+            <label class="review-form__label review-form__label--name" for="your-name">Имя<sup>*</sup>:</label>
             <input class="review-form__input review-form__input--long" type="text" name="your-name" id="your-name" placeholder="Ваше имя" required>
           </div>
           <div class="review-form__group">
-            <label class="review-form__label" for="your-surname">Фамилия<sup>*</sup>:</label>
+            <label class="review-form__label review-form__label--name" for="your-surname">Фамилия<sup>*</sup>:</label>
             <input class="review-form__input" type="text" name="surname" id="surname" placeholder="Ваша фамилия" required>
           </div>
           <div class="review-form__group">
-            <label class="review-form__label" for="patronymic">Отчество:</label>
+            <label class="review-form__label review-form__label--name" for="patronymic">Отчество:</label>
             <input class="review-form__input" type="text" name="patronymic" id="patronymic" placeholder="Ваше отчество" required>
           </div>
         </fieldset>
         <fieldset class="review-form__item review-form__item--contacts">
           <legend class="review-form__title review-form__title--contacts">Контактная информация</legend>
-          <label class="review-form__phone" for="phone">Контактный телефон<sup>*</sup>:</label>
-          <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--phone" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
-            <span class="review-form__phone-icon"></span>
-          </p>
-          <label class="review-form__email" for="email">Электронная почта<sup>*</sup>:</label>
-          <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--email" type="text" name="email" id="email" placeholder="Введите e-mail" required>
-            <span class="review-form__email-icon"></span>
-          </p>
+          <div class="review-form__set">
+            <label class="review-form__phone" for="phone">Контактный телефон<sup>*</sup>:</label>
+            <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--phone" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+              <span class="review-form__phone-icon"></span>
+            </p>
+            <label class="review-form__email" for="email">Электронная почта<sup>*</sup>:</label>
+            <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--email" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+              <span class="review-form__email-icon"></span>
+            </p>
+          </div>
         </fieldset>
         <fieldset class="review-form__item review-form__item--radio">
           <legend class="review-form__title review-form__title--radio">Ваше общее впечатление:</legend>
@@ -80,7 +82,7 @@
         </fieldset>
         <fieldset class="review-form__item review-form__item--checkbox">
           <legend class="review-form__title review-form__title--checkbox">Посещенные достопримечательности:</legend>
-          <div class="review-form__set">
+          <div class="review-form__set-check">
             <input class="visually-hidden review-form__checkbox" type="checkbox" name="devel-bridge" id="devel-bridge" checked>
             <label class="review-form__label-check" for="devel-bridge">Мост Дьявола</label>
             <input class="visually-hidden review-form__checkbox" type="checkbox" name="mountain-bell" id="mountain-bell" checked>
