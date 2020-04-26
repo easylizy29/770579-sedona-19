@@ -7,27 +7,38 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 0;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
 
   .video__intro-title {
     @include font-set(18px, 26px, 700);
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       @include font-set(30px, 26px, 700);
-      padding-left: 250px;
-      padding-right: 250px;
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 400px;
+      padding-right: 400px;
     }
   }
 
   .video__intro-text {
     @include font-set(14px, 21px, 400);
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
   }
 }
 
