@@ -44,7 +44,7 @@
       </div>
       <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="review-form__item review-form__item--name">
-          <legend class="review-form__title review-form__item--name">Представьтесь:</legend>
+          <legend class="review-form__title review-form__title--name">Представьтесь:</legend>
           <div class="review-form__group">
             <label class="review-form__label review-form__label--name" for="your-name">Имя<sup>*</sup>:</label>
             <input class="review-form__input review-form__input--long" type="text" name="your-name" id="your-name" placeholder="Ваше имя" required>
@@ -62,13 +62,17 @@
           <legend class="review-form__title review-form__title--contacts">Контактная информация</legend>
           <div class="review-form__set">
             <label class="review-form__phone" for="phone">Контактный телефон<sup>*</sup>:</label>
-            <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--phone" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
-              <span class="review-form__phone-icon"></span>
-            </p>
+            <div class="review-form__contacts-wrapper">
+              <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--phone" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+                <span class="review-form__phone-icon"></span>
+              </p>
+            </div>
             <label class="review-form__email" for="email">Электронная почта<sup>*</sup>:</label>
-            <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--email" type="text" name="email" id="email" placeholder="Введите e-mail" required>
-              <span class="review-form__email-icon"></span>
-            </p>
+            <div class="review-form__contacts-wrapper">
+              <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--email" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+                <span class="review-form__email-icon"></span>
+              </p>
+            </div>
           </div>
         </fieldset>
         <fieldset class="review-form__item review-form__item--radio">

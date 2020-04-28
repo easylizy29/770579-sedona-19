@@ -4,15 +4,15 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 60px;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px;
+    padding: 0 120px;
   }
 }
 
@@ -79,7 +79,6 @@
 
 .review-form__title {
   @include font-set(18px, 26px, 700);
-  padding-bottom: 20px;
   text-transform: uppercase;
     @media (min-width: $tablet-width) {
       @include font-set(21px, 26px, 700);
@@ -87,13 +86,23 @@
 
   &--radio {
     @media (min-width: $tablet-width) {
+      padding-bottom: 40px;
       text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 40px;
     }
   }
 
   &--name {
     @media (min-width: $tablet-width) {
+      padding-bottom: 40px;
       text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 40px;
     }
   }
 
@@ -164,6 +173,8 @@
 }
 
 .review-form__group {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -182,6 +193,11 @@
   @include font-set(14px, 21px, 400);
   text-transform: uppercase;
   color: $grey;
+}
+
+.review-form__contacts-wrapper {
+  display: flex;
+  width: 100%;
 }
 
 .review-from__input-wrapper {
@@ -209,11 +225,19 @@
     width: 180px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 80%;
+  }
+
   &--long {
-    width: 210px;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
-      width: 230px;
+      width: 80%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
     }
   }
 
