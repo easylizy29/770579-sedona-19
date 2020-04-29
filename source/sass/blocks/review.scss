@@ -180,7 +180,6 @@
 
 .review-form__group {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -209,6 +208,15 @@
   display: flex;
   align-items: baseline;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
 }
 
 .review-from__input-wrapper {
@@ -233,7 +241,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 180px;
+    width: 70%;
   }
 
   @media (min-width: $desktop-width) {
@@ -259,6 +267,10 @@
   &--phone {
     width: 225px;
     @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 315px;
     }
   }
@@ -266,6 +278,10 @@
   &--email {
     width: 225px;
     @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 315px;
     }
   }
