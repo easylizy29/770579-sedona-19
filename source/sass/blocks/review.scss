@@ -91,7 +91,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 40px;
+      padding-bottom: 60px;
+      text-align: center;
     }
   }
 
@@ -102,7 +103,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 40px;
+      padding-bottom: 60px;
     }
   }
 
@@ -115,7 +116,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 350px;
+      padding: 10px 350px;
     }
   }
 
@@ -130,6 +131,11 @@
   &--contacts {
     @media (min-width: $tablet-width) {
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: center;
+      padding-bottom: 60px;
     }
   }
 }
@@ -193,10 +199,15 @@
   @include font-set(14px, 21px, 400);
   text-transform: uppercase;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
 }
 
 .review-form__contacts-wrapper {
   display: flex;
+  align-items: baseline;
   width: 100%;
 }
 
@@ -226,7 +237,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 80%;
+    width: 75%;
   }
 
   &--long {
@@ -237,7 +248,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 100%;
+      width: 80%;
     }
   }
 
@@ -248,14 +259,14 @@
   &--phone {
     width: 225px;
     @media (min-width: $tablet-width) {
-      width: 100%;
+      width: 315px;
     }
   }
 
   &--email {
     width: 225px;
     @media (min-width: $tablet-width) {
-      width: 100%;
+      width: 315px;
     }
   }
 }
@@ -270,6 +281,10 @@
   @include font-set(14px, 21px, 400);
   text-transform: uppercase;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
 }
 
 .review-form__email-icon {
@@ -283,7 +298,7 @@
   position: relative;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 60px;
+  padding-left: 75px;
   cursor: pointer;
 }
 
@@ -291,6 +306,8 @@
   content: "";
   left: 0;
   cursor: pointer;
+  height: 55px;
+  width: 55px;
 }
 
 .review-form__radio:checked + label::after {
@@ -305,8 +322,8 @@
 .review-form__checkbox:checked + label::after {
   display: block;
   position: absolute;
-  height: 46px;
-  width: 46px;
+  height: 55px;
+  width: 55px;
   background-image: url("../img/icon-tick.svg");
   background-position: center;
   background-color: $secondary-color;
@@ -334,8 +351,8 @@
   position: absolute;
   top: 0;
   left: 10px;
-  height: 46px;
-  width: 46px;
+  height: 55px;
+  width: 55px;
   background-color: $secondary-color;
   background-repeat: no-repeat;
   border-radius: 5px;
