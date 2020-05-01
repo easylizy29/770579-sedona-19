@@ -3,11 +3,15 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
+  padding: 0 20px;
   margin: 0 auto;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 0 60px;
   }
 }
@@ -113,6 +117,8 @@
 
     @media (min-width: $desktop-width) {
       padding: 10px 350px;
+      padding-bottom: 30px;
+      text-align: center;
     }
   }
 
@@ -120,6 +126,11 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 40px;
       text-align: center;
     }
   }
@@ -131,7 +142,7 @@
 
     @media (min-width: $desktop-width) {
       text-align: center;
-      padding-bottom: 60px;
+      padding-bottom: 40px;
     }
   }
 }
@@ -413,6 +424,16 @@
   }
 }
 
+.review-form__wrapper-button {
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 .review-form__button {
   @include button-throw;
   width: 280px;
@@ -423,4 +444,14 @@
   font-size: 21px;
   font-weight: 700;
   color: $white;
+}
+
+.review-form__required-fields {
+  @include font-set(14px, 21px, 400);
+  display: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
