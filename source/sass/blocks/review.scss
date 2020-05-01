@@ -10,10 +10,6 @@
   @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 120px;
-  }
 }
 
 .review__form__page-wrapper {
@@ -204,6 +200,18 @@
   }
 }
 
+.review-form__sign-phone {
+  @include font-set(14px, 21px, 400);
+  display: block;
+  text-transform: uppercase;
+  color: $grey;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+
 .review-form__contacts-wrapper {
   display: flex;
   align-items: baseline;
@@ -215,7 +223,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
+    width: 50%;
+    flex-direction: row;
+  }
+}
+
+.review-form__contacts-wrapper:nth-child(1) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.review-form__contacts-wrapper:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    margin-right: 115px;
   }
 }
 
@@ -244,10 +265,6 @@
     width: 70%;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 75%;
-  }
-
   &--long {
     width: 100%;
 
@@ -256,7 +273,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 80%;
+      width: 77%;
     }
   }
 
@@ -282,7 +299,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 315px;
+      width: 376px;
     }
   }
 }
@@ -389,6 +406,10 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1000px;
   }
 }
 
