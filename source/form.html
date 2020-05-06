@@ -46,11 +46,11 @@
         <fieldset class="review-form__item review-form__item--name">
           <legend class="review-form__title review-form__title--name">Представьтесь:</legend>
           <div class="review-form__group">
-            <label class="review-form__label review-form__label--name" for="your-name"><span>Имя*</span>:</label>
+            <label class="review-form__label review-form__label--name" for="your-name"><span>Имя<sup>*</sup></span>:</label>
             <input class="review-form__input" type="text" name="your-name" id="your-name" placeholder="Ваше имя" required>
           </div>
           <div class="review-form__group">
-            <label class="review-form__label review-form__label--name" for="your-surname"><span>Фамилия*</span>:</label>
+            <label class="review-form__label review-form__label--name" for="your-surname"><span>Фамилия<sup>*</sup></span>:</label>
             <input class="review-form__input" type="text" name="surname" id="surname" placeholder="Ваша фамилия" required>
           </div>
           <div class="review-form__group">
@@ -62,13 +62,13 @@
           <legend class="review-form__title review-form__title--contacts">Контактная информация</legend>
           <div class="review-form__set">
             <div class="review-form__contacts-wrapper">
-              <label class="review-form__phone" for="phone"><span><span class="review-form__sign-phone">Контактный</span>Телефон*</span>:</label>
+              <label class="review-form__phone" for="phone"><span>Контактный</span>Телефон<sup>*</sup>:</label>
               <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--phone" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
                 <span class="review-form__phone-icon"></span>
               </p>
             </div>
             <div class="review-form__contacts-wrapper">
-              <label class="review-form__email" for="email"><span>Электронная почта*</span>:</label>
+              <label class="review-form__email" for="email">Электронная почта<sup>*</sup>:</label>
               <p class="review-from__input-wrapper"><input class="review-form__input review-form__input--email" type="text" name="email" id="email" placeholder="Введите e-mail" required>
                 <span class="review-form__email-icon"></span>
               </p>
@@ -103,7 +103,7 @@
         </fieldset>
         <div class="review-form__wrapper-button">
           <button class="review-form__button button" type="submit">Отправить отзыв</button>
-          <span class="review-form__required-fields">* - Обязательные поля</span>
+          <span class="review-form__required-fields"><sup>*</sup> - Обязательные поля</span>
         </div>
       </form>
     </main>

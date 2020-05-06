@@ -82,6 +82,7 @@
 .review-form__title {
   @include font-set(18px, 26px, 700);
   text-transform: uppercase;
+  margin-bottom: 10px;
     @media (min-width: $tablet-width) {
       @include font-set(21px, 26px, 700);
     }
@@ -159,9 +160,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
   }
 }
 
@@ -177,7 +178,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
     justify-content: space-around;
     margin: 0;
     padding: 0;
@@ -208,28 +209,24 @@
   color: $grey;
 
   @media (min-width: $tablet-width) {
-    padding-right: 20px;
+    margin-right: 20px;
   }
 }
 
-.review-form__sign-phone {
-  @include font-set(14px, 21px, 400);
-  padding-right: 5px;
-  text-transform: uppercase;
-  color: $grey;
-
+.review-form__phone span {
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-
 .review-form__contacts-wrapper {
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    display: flex;
     flex-direction: row;
+    width: 40%;
+    align-items: center;
   }
 }
 
@@ -239,21 +236,8 @@
   }
 }
 
-.review-form__contacts-wrapper:nth-child(2) {
-  @media (min-width: $desktop-width) {
-    margin-right: 115px;
-  }
-}
-
 .review-from__input-wrapper {
   position: relative;
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 30%;
-  }
 }
 
 .review-form__input {
@@ -299,12 +283,15 @@
   color: $grey;
 
   @media (min-width: $tablet-width) {
-    padding-right: 20px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
   }
 }
 
 .review-form__email-icon {
-
   display: block;
   position: absolute;
   top: 0;
@@ -358,7 +345,7 @@
 .review-form__label-check {
   @include font-set(18px, 26px, 700);
   position: relative;
-  padding-left: 70px;
+  padding-left: 90px;
   padding-top: 10px;
   padding-bottom: 25px;
   margin-top: 22px;
@@ -366,6 +353,10 @@
 
   @media (min-width: $tablet-width) {
     width: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
   }
 }
 
@@ -398,10 +389,6 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 1000px;
-  }
 }
 
 .review-form__wrapper-button {
@@ -411,6 +398,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -420,7 +409,6 @@
   height: 55px;
   background-color: $primary-color;
   text-transform: uppercase;
-  margin-bottom: 50px;
   font-size: 21px;
   font-weight: 700;
   color: $white;

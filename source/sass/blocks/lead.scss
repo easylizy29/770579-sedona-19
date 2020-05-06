@@ -17,8 +17,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-set(26px, 34px, 700);
-    padding-left: 170px;
-    padding-right: 170px;
+    width: 70%;
   }
 }
 
