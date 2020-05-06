@@ -32,6 +32,10 @@
 .offers__title {
   @include font-set(21px, 40px, 700);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 30%;
+  }
 }
 
 .offers__text {
@@ -41,8 +45,7 @@
   padding-right: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 125px;
-    padding-right: 125px;
+    width: 60%;
   }
 }
 
