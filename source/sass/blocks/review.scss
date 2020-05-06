@@ -89,7 +89,6 @@
   &--radio {
     @media (min-width: $tablet-width) {
       padding-bottom: 40px;
-      text-align: left;
     }
 
     @media (min-width: $desktop-width) {
@@ -189,6 +188,8 @@
   display: flex;
   padding: 0;
   margin: 0;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .review-form__label {
@@ -224,12 +225,7 @@
 
 
 .review-form__contacts-wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-    width: 100%;
-  }
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     width: 50%;
@@ -250,6 +246,7 @@
 }
 
 .review-from__input-wrapper {
+  position: relative;
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -261,62 +258,39 @@
 
 .review-form__input {
   @include font-set(18px, 26px, 700);
-  width: 170px;
+  width: 100%;
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 20px;
   background-color: $secondary-color;
   color: $black;
   border: none;
-
-  @media (min-width: $tablet-width) {
-    width: 70%;
-  }
-
-  &--long {
-    width: 100%;
-
-    @media (min-width: $tablet-width) {
-      width: 80%;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 77%;
-    }
-  }
+  flex-grow: 1;
 
   &--name {
-    width: 210px;
+    width: 100%;
   }
 
   &--phone {
-    width: 225px;
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 315px;
-    }
+    width: 100%;
   }
 
   &--email {
-    width: 225px;
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 376px;
-    }
+    width: 100%;
   }
 }
 
 .review-form__phone-icon {
-  height: 18px;
-  width: 18px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 58px;
   background-image: url("../img/icon-phone.svg");
+  background-color: $form-img;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .review-form__email {
@@ -330,9 +304,17 @@
 }
 
 .review-form__email-icon {
-  height: 18px;
-  width: 18px;
-  background-image: url("../img/icon-email.svg");
+
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 58px;
+  background-image: url("../img/icon-mail.svg");
+  background-color: $form-img;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .review-form__label-radio {
