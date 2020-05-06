@@ -1,5 +1,5 @@
 .video {
-  height: 460px;
+  height: auto;
   background-color: $white;
 }
 
@@ -31,13 +31,7 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      padding-left: 170px;
-      padding-right: 170px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 250px;
-      padding-right: 250px;
+      width: 40%;
     }
   }
 }
@@ -47,6 +41,16 @@
   justify-content: center;
   margin-bottom: -7px;
   padding: 0;
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.video__screen img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .video__player {
@@ -68,6 +72,13 @@
   padding-bottom: 20px;
   width: 280px;
   background-color: $secondary-color;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .video__wrapper-controls .video__control-item {
