@@ -26,6 +26,8 @@
 
 .review-form__item {
   border: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 40px;
@@ -148,12 +150,10 @@
 }
 
 .review-form__set {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     flex-direction: row;
     margin: 0;
     padding: 0;
@@ -213,7 +213,7 @@
 
 .review-form__sign-phone {
   @include font-set(14px, 21px, 400);
-  display: block;
+  padding-right: 5px;
   text-transform: uppercase;
   color: $grey;
 
@@ -224,11 +224,9 @@
 
 
 .review-form__contacts-wrapper {
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-
   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
     flex-direction: column;
     width: 100%;
   }
