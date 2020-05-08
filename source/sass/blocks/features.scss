@@ -165,10 +165,10 @@
   @media (min-width: $tablet-width) {
     width: 33.3334%;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    width: 30%;
-  }
+.features__info .features__title {
+  width: 100%;
 }
 
 .features__title {
