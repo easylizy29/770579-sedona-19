@@ -1,13 +1,17 @@
 .social {
-  @include list-reset;
+  padding-left: 10px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .social__item {
   margin-right: 5px;
   margin-left: 5px;
+  margin-bottom: 5px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .social__link {
@@ -19,6 +23,7 @@
   background-color: $primary-color;
   text-decoration: none;
   background-repeat: no-repeat;
+  background-position: center;
 
   &--twitter {
     background-size: 22px 27px;

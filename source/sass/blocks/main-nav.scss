@@ -1,38 +1,132 @@
 .main-nav {
   @include font-set(18px, 40px, 700);
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   color: $white;
   background-color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(14px, 40px, 700);
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 .main-nav__close {
   @include button-throw;
   position: absolute;
-  width: 23px;
+  top: 10px;
+  right: 12px;
+  width: 22px;
   height: 22px;
   background-image: url("../img/icon-cross.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
   list-style: none;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 a {
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }
 
 .site-list {
-@include list-reset;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    list-style: none;
+    width: 100%;
+  }
 }
 
 .site-list__item {
-  border-top: 1px solid $grey;
-  border-bottom: 1px solid $grey;
+
+  &--active {
+    background-color: $primary-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    padding: 12px 0;
+    border: none;
+
+    &--active {
+      background-color: $white;
+      color: $brown;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+
+    &--active {
+      background-color: $white;
+      color: $brown;
+    }
+
+    &--left {
+      margin-right: 35px;
+      padding-right: 40px;
+    }
+
+    &--right {
+      margin-left: 35px;
+      padding-left: 40px;
+    }
+  }
 }
 
-.site-list__item--active {
-  background-color: $primary-color;
-  color: rgba(255, 255, 255, 0.3);
+.site-list__item:nth-child(2) {
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20%;
+  }
 }

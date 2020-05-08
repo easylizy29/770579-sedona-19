@@ -1,7 +1,17 @@
-.intro {
-  margin-top: 55px;
-}
-
 .intro__image {
-  padding-top: 20px;
+  width: 300px;
+  height: auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  &--short {
+    @media (min-width: $tablet-width) {
+      width: 460px;
+      height: 230px;
+    }
+  }
 }

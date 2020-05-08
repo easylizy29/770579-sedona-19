@@ -1,7 +1,15 @@
 .page-footer {
-  margin-top: 40px;
-  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
   background-color: $white;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+    margin: 0;
+  }
 }
 
 .page-footer__hashtag {
@@ -9,13 +17,17 @@
   text-transform: uppercase;
 }
 
-.page-footer__list {
+.page-footer__list__page-wrapper {
   @include list-reset;
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .page-footer__copyright {
   @include font-set(14px, 26px, 400);
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
 }

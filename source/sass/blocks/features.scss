@@ -1,8 +1,28 @@
 .features__list {
+  @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  @include list-reset;
   background-color: $white;
+  counter-reset: section;
+}
+
+.features__reason::after {
+  counter-increment: section;
+  content: "&mdash;&nbsp;"features__reason"&nbsp;&mdash;" counter(section);
+}
+
+.review-form__label-radio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  margin-top: -35px;
+  height: 46px;
+  width: 46px;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .features__sublist {
@@ -11,16 +31,24 @@
   flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 40px;
-}
 
-.features__item {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 70px;
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
 }
 
 .features__sublist .features__item {
   width: 100%;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 33.3334%;
+    margin: 0;
+    padding-top: 120px;
+    padding-left: 0;
+    justify-content: center;
+    background-position: center top;
+  }
 }
 
 .features__item {
@@ -28,24 +56,96 @@
   flex-wrap: wrap;
   background-repeat: no-repeat;
 
+  &--grey {
+    width: 100%;
+    background-color: $secondary-color;
+    justify-content: center;
+    text-align: center;
+    @media (min-width: $tablet-width) {
+      width: 33.3334%;
+    }
+  }
+
   &--house {
     background-size: 39px 37px;
     background-image: url("../img/icon-house.svg");
+    margin-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 30%;
+      order: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 20%;
+    }
   }
 
   &--gifts {
     background-size: 32px 37px;
     background-image: url("../img/icon-gift.svg");
+    margin-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 25%;
+      order: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 20%;
+    }
   }
 
   &--burger {
     background-size: 40px 35px;
     background-image: url("../img/icon-burger.svg");
+    margin-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 30%;
+      order: 2;
+    }
+  }
+
+  &--big {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &--big:nth-child(2n) {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+}
+
+.features__image {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 66.6667%;
+    height: 255px;
+    overflow: hidden;
+  }
+}
+
+.features__image img {
+  display: block;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -130px;
   }
 }
 
 .features__sublist .features__title {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 40%;
+  }
 }
 
 .features__sublist.features__text {
@@ -55,35 +155,50 @@
 }
 
 .features__info {
-  padding: 47px 27px;
+  min-height: 115px;
+  padding: 35px 27px;
   background-color: $primary-color;
   color: $white;
   text-transform: uppercase;
+  text-align: center;
 
-  p {
-    color: $white;
-    text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    width: 33.3334%;
   }
+}
+
+.features__info .features__title {
+  width: 100%;
 }
 
 .features__title {
   @include font-set(18px, 26px, 700);
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
 }
 
-.features__text {
-  @include font-set(14px, 21px, 400);
-}
-
-.features__wrapper {
-  background-color: $secondary-color;
+.features__reason {
+  @include font-set(18px, 26px, 700);
   text-transform: uppercase;
   text-align: center;
 }
 
-.features__bridge {
-  background-color: $primary-color;
+.features__text {
+  @include font-set(14px, 21px, 400);
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin: 0;
 
-  h3 {
-    @include font-set(18px, 26px, 700);
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: 80%;
   }
 }

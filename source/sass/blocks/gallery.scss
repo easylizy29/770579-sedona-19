@@ -10,19 +10,75 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.gallery__list__page-wrapper {
+  @include list-reset;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .gallery__item {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px #e5e5e5;
-  border-bottom: 1px #e5e5e5;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33.3334%;
+  }
+
+  &--big {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+}
+
+li.gallery__item img {
+  width: 100%;
 }
 
 .gallery__caption {
-  width:  100%;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary-color;
+    margin: 0;
+    padding: 20px 20px;
+  }
 }
 
 .gallery__caption-item {
@@ -32,14 +88,25 @@
 .gallery__title {
   @include font-set(14px, 21px, 700);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .gallery__text {
   @include font-set(14px, 21px, 400);
+  margin: 0;
+}
+
+.gallery__assessment {
+  display: flex;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
 }
 
 .gallery__assessment-button {
   @include button-throw;
+  margin-right: 10px;
 }
 
 .assessment__text {

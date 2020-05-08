@@ -1,18 +1,33 @@
 .lead {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 33px;
-  padding-right: 33px;
-  height: 240px;
+  justify-content: center;
+  padding: 33px 10px;
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    padding: 33px 165px;
+  }
 }
 
 .lead__title {
   @include font-set(18px, 26px, 700);
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(26px, 34px, 700);
+    width: 70%;
+  }
 }
 
 .lead__text {
   @include font-set(14px, 26px, 400);
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+  }
 }
