@@ -1,17 +1,23 @@
 .intro__image {
-  width: 230px;
+  width: 281px;
   height: auto;
   padding-top: 35px;
-  padding-bottom: 53px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
   }
 
   &--short {
+    width: 230px;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 53px;
     @media (min-width: $tablet-width) {
-      width: 460px;
-      height: 230px;
+      width: 230px;
+      height: auto;
+      padding-top: 35px;
+      padding-bottom: 53px;
     }
   }
 }

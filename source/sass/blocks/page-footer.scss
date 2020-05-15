@@ -5,7 +5,11 @@
   margin: 0 auto;
   background-color: $white;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 12px;
+
+  &--form {
+    padding-top: 50px;
+  }
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;

@@ -2,8 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 10px;
+  padding: 27px 12px;
   background-color: $white;
+
+  &--form {
+    padding: 20px 12px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 33px 165px;

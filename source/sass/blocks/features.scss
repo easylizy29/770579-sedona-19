@@ -29,8 +29,8 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
@@ -66,6 +66,14 @@
     }
   }
 
+  &--grey .features__title {
+    padding: 8px 0 28px 0;
+  }
+
+  &--grey .features__text {
+    padding: 0 0 29px 0;
+  }
+
   &--house {
     background-size: 39px 37px;
     background-image: url("../img/icon-house.svg");
@@ -82,7 +90,7 @@
   }
 
   &--gifts {
-    background-size: 32px 37px;
+    background-size: 43px 35px;
     background-image: url("../img/icon-gift.svg");
     margin-left: 20px;
 
@@ -97,7 +105,7 @@
   }
 
   &--burger {
-    background-size: 40px 35px;
+    background-size: 39px 35px;
     background-image: url("../img/icon-burger.svg");
     margin-left: 20px;
 
@@ -117,6 +125,18 @@
     width: 100%;
     flex-direction: row-reverse;
   }
+}
+
+.features__item--house .features__title {
+  margin-top: 9px;
+}
+
+.features__item--gifts .features__title {
+  margin-top: 9px;
+}
+
+.features__item--burger .features__title {
+  margin-top: 9px;
 }
 
 .features__image {
@@ -156,11 +176,15 @@
 
 .features__info {
   min-height: 115px;
-  padding: 35px 27px;
+  padding: 30px 17px 21px 17px;
   background-color: $primary-color;
   color: $white;
   text-transform: uppercase;
   text-align: center;
+
+  &--second {
+    padding: 22px 17px 18px 17px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 33.3334%;
@@ -189,12 +213,14 @@
   @include font-set(18px, 26px, 700);
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 29px;
 }
 
 .features__text {
   @include font-set(14px, 21px, 400);
   text-transform: uppercase;
   padding-bottom: 20px;
+  padding-right: 24px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
