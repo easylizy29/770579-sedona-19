@@ -67,8 +67,8 @@ li.gallery__item img {
 
 .gallery__caption {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 40px;
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -81,8 +81,13 @@ li.gallery__item img {
   }
 }
 
+// .gallery__caption:last-child {
+//   padding-bottom: 20px;
+// }
+
 .gallery__caption-item {
   text-align: left;
+  padding-bottom: 12px;
 }
 
 .gallery__title {
