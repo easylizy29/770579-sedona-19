@@ -25,8 +25,8 @@
   pointer: cursor;
 
   @media (min-width: $tablet-width) {
-    width: 485px;
-    margin: 0 0 50px 0;
+    width: 458px;
+    margin: 31px 0 62px 0;
   }
 }
 
@@ -35,7 +35,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 30%;
+    @include font-set(30px, 40px, 700);
+    width: 42%;
   }
 }
 
@@ -47,7 +48,7 @@
   margin-top: -3px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 60%;
   }
 }
 

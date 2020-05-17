@@ -5,7 +5,10 @@
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 60%;
+    height: auto;
+    padding-top: 21px;
+    padding-bottom: 32px;
   }
 
   &--short {

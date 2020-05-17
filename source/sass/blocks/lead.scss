@@ -20,7 +20,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    @include font-set(26px, 34px, 700);
+    @include font-set(23px, 34px, 700);
     width: 70%;
   }
 }
@@ -32,6 +32,6 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: 60%;
+    width: 65%;
   }
 }

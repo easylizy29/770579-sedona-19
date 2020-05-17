@@ -16,8 +16,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
     justify-content: space-around;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -40,4 +41,7 @@
   padding-bottom: 8px;
   align-items: center;
   text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
