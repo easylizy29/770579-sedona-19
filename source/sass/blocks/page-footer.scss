@@ -16,6 +16,9 @@
 
   &--photo {
     padding-top: 48px;
+    @media (min-width: $tablet-width) {
+      padding-top: 58px;
+    }
   }
 
   @media (min-width: $tablet-width) {

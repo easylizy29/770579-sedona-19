@@ -9,6 +9,10 @@
     padding: 51px 0 76px 0;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 51px 20px 72px 20px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 33px 165px;
   }
