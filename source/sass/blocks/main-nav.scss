@@ -102,10 +102,16 @@ a {
 
     &--left {
       text-align: left;
+      @media (min-width: $desktop-width) {
+        text-align: center;
+      }
     }
 
     &--right {
       text-align: right;
+      @media (min-width: $desktop-width) {
+        text-align: center;
+      }
     }
   }
 
