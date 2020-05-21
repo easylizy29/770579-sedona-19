@@ -5,10 +5,6 @@
   padding: 27px 12px;
   background-color: $white;
 
-  &--form {
-    padding: 51px 0 76px 0;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 51px 20px 76px 20px;
   }
@@ -16,6 +12,17 @@
   @media (min-width: $desktop-width) {
     padding-top: 86px;
     padding-bottom: 62px;
+  }
+
+  &--form {
+    padding: 51px 0 76px 0;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      padding-top: 32px;
+      padding-bottom: 50px;
+    }
   }
 }
 
@@ -27,6 +34,12 @@
   @media (min-width: $tablet-width) {
     @include font-set(31px, 34px, 700);
     width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set(22px, 30px, 700);
+    width: 60%;
+    padding-bottom: 10px;
   }
 }
 

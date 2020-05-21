@@ -28,6 +28,11 @@
     width: 458px;
     margin: 31px 0 62px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 458px;
+    margin: 36px 0 62px 0;
+  }
 }
 
 .offers__title {
@@ -49,6 +54,10 @@
 
   @media (min-width: $tablet-width) {
     width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
   }
 }
 

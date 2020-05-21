@@ -26,6 +26,10 @@
     justify-content: space-around;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+  }
 }
 
 .page-footer__hashtag {
