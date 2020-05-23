@@ -15,6 +15,10 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 0;
+  }
 }
 
 .gallery__list__page-wrapper {
@@ -97,6 +101,12 @@ li.gallery__item img {
     background-color: $secondary-color;
     margin: 0;
     padding: 16px 17px 8px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $white;
   }
 }
 

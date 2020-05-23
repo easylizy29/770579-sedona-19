@@ -38,6 +38,10 @@
     @media (min-width: $tablet-width) {
       width: 60%;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 40%;
+    }
   }
 }
 
@@ -56,6 +60,9 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+  @media (min-width: $desktop-width) {
+    width: 74%;
+  }
 }
 
 .video__player {
@@ -63,6 +70,9 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 7px;
+  @media (min-width: $desktop-width) {
+  padding: 0;
+  }
 }
 
 .video__controls {
@@ -90,6 +100,14 @@
     padding-bottom: 31px;
     width: 85%;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    margin-top: -91px;
+    width: 67%;
+  }
 }
 
 .video__wrapper-controls .video__control-item {
@@ -107,15 +125,24 @@
   &--replay {
     position: relative;
     left: -70px;
+    @media (min-width: $desktop-width) {
+      left: -320px;
+    }
   }
 
   &--subtitles {
     position: relative;
     left: 50px;
+    @media (min-width: $desktop-width) {
+      left: 290px;
+    }
   }
 
   &--fullscreen {
     position: relative;
     left: 81px;
+    @media (min-width: $desktop-width) {
+      left: 322px;
+    }
   }
 }

@@ -19,16 +19,16 @@
     @media (min-width: $tablet-width) {
       padding-top: 58px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 101px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
     justify-content: space-around;
     margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 23px;
   }
 }
 
