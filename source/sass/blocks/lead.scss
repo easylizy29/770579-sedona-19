@@ -15,10 +15,22 @@
   }
 
   &--form {
-    padding: 51px 0 76px 0;
+    padding: 24px 0 16px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 51px 0 84px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 51px 0 102px 0;
+    }
   }
 
   &--index {
+    @media (min-width: $tablet-width) {
+      padding: 32px 20px 26px 20px;
+    }
+
     @media (min-width: $desktop-width) {
       padding-top: 32px;
       padding-bottom: 50px;
@@ -39,12 +51,12 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    @include font-set(31px, 34px, 700);
+    @include font-set(23px, 34px, 700);
     width: 70%;
   }
 
   @media (min-width: $desktop-width) {
-    @include font-set(30px, 30px, 700);
+    @include font-set(26px, 30px, 700);
     width: 60%;
     padding-bottom: 7px;
   }

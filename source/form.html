@@ -25,14 +25,22 @@
         </ul>
       </nav>
       <div class="page-header__top">
-        <a class="logo" href="index.html">
-          <img class="logo__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+        <a class="logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+          </picture>
         </a>
         <button class="page-header__menu-button">
         </button>
       </div>
       <div class="page-header__intro--short intro">
-        <img class="intro__image intro__image--short" src="img/text-sedona.svg" width="229" height="39" alt="Заголовок Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-sedona.svg">
+          <source media="(min-width: 768px)" srcset="img/text-sedona.svg">
+          <img class="intro__image intro__image--short" src="img/text-sedona.svg" width="229" height="39" alt="Заголовок Седоны">
+        </picture>
       </div>
     </header>
 

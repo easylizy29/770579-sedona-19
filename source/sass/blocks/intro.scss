@@ -1,27 +1,27 @@
 .intro__image {
   width: 281px;
   height: auto;
-  padding-top: 35px;
-  padding-bottom: 32px;
+  padding-top: 87px;
+  padding-bottom: 86px;
 
   @media (min-width: $tablet-width) {
     width: 60%;
     height: auto;
-    padding-top: 21px;
-    padding-bottom: 32px;
+    padding-top: 78px;
+    padding-bottom: 91px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 38%;
+    width: 39%;
     height: auto;
-    padding-top: 21px;
-    padding-bottom: 32px;
+    padding-top: 79px;
+    padding-bottom: 90px;
   }
 
   &--short {
     width: 230px;
     height: auto;
-    padding-top: 35px;
+    padding-top: 49px;
     padding-bottom: 53px;
     @media (min-width: $tablet-width) {
       width: 456px;

@@ -55,6 +55,7 @@
 .main-nav__list li {
   padding-top: 8px;
   padding-bottom: 8px;
+  cursor: pointer;
 }
 
 a {
@@ -62,6 +63,20 @@ a {
 
   @media (min-width: $tablet-width) {
     color: $black;
+  }
+}
+
+a:hover {
+  @media (min-width: $tablet-width) {
+    color: $primary-color;
+    }
+}
+
+a:active {
+
+  color: $hover-blue;
+  @media (min-width: $tablet-width) {
+    color: $grey-dark;
   }
 }
 
@@ -132,6 +147,23 @@ a {
       margin-left: 35px;
       padding-left: 40px;
     }
+  }
+}
+
+.site-list__item:hover,
+.site-list__item:focus {
+  background-color: $hover-blue;
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.site-list__item:active {
+  background-color: $active-blue;
+  color: $hover-blue;
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    color: $primary-color;
   }
 }
 

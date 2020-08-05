@@ -37,13 +37,15 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: 14px;
-    margin-bottom: 44px;
+    margin-bottom: 17px;
 
     @media (min-width: $tablet-width) {
       width: 50%;
       margin: 0;
       padding: 0;
       order: -2;
+      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 
@@ -73,7 +75,7 @@
     padding: 0;
     @media (min-width: $tablet-width) {
       width: 100%;
-      margin: 51px 0 5px 0;
+      margin: 42px 0 5px 0;
     }
   }
 
@@ -315,6 +317,15 @@
   }
 }
 
+.review-form__input:hover {
+  background-color: $form-img;
+}
+
+.review-form__input:active {
+  background-color: $white;
+  box-shadow: 0 0 5px rgb(229, 229, 229);
+}
+
 .review-form__phone-icon {
   display: block;
   position: absolute;
@@ -393,6 +404,15 @@
   border-radius: 50px;
 }
 
+.review-form__radio:hover:checked + label::after {
+  border: 16px solid $form-img;
+}
+
+.review-form__radio:active:checked + label::after {
+  background-color: $grey-dark;
+  border: 16px solid $form-img;
+}
+
 .review-form__checkbox:checked + label::after {
   display: block;
   position: absolute;
@@ -403,6 +423,14 @@
   background-color: $secondary-color;
   background-repeat: no-repeat;
   border-radius: 5px;
+}
+
+.review-form__checkbox:hover:checked + label::after {
+  background-color: $form-img;
+}
+
+.review-form__checkbox:active:checked + label::after {
+  background-color: $grey-dark;
 }
 
 .review-form__label-check {
@@ -522,6 +550,15 @@
   }
 }
 
+.review-form__textarea:hover {
+  background-color: $form-img;
+}
+
+.review-form__textarea:active {
+  background-color: $white;
+  box-shadow: 0 0 5px rgb(229, 229, 229);
+}
+
 .review-form__wrapper-button {
   text-align: center;
   @media (min-width: $tablet-width) {
@@ -540,17 +577,27 @@
 
 .review-form__button {
   @include button-throw;
-  width: 325px;
+  width: 280px;
   height: 60px;
   background-color: $primary-color;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
   color: $white;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 480px;
   }
+}
+
+.review-form__button:hover {
+  background-color: $active-blue;
+}
+
+.review-form__button:active {
+  background-color: $active-blue;
+  color: $primary-color;
 }
 
 .review-form__required-fields {

@@ -60,18 +60,16 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
-  @media (min-width: $desktop-width) {
-    width: 74%;
-  }
 }
 
 .video__player {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 7px;
+  margin-top: -100px;
   @media (min-width: $desktop-width) {
   padding: 0;
+  margin-top: 0;
   }
 }
 
@@ -90,14 +88,17 @@
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin: 92px 0 0 0;
   width: 90%;
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 0 0;
     position: relative;
     padding-top: 31px;
     padding-bottom: 31px;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 85%;
   }
 
@@ -107,6 +108,13 @@
     padding-bottom: 31px;
     margin-top: -91px;
     width: 67%;
+  }
+}
+
+.video__control-buttons {
+  fill: #5c6870;
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
   }
 }
 
@@ -125,6 +133,11 @@
   &--replay {
     position: relative;
     left: -70px;
+
+    @media (min-width: $tablet-width) {
+      left: -245px;
+    }
+
     @media (min-width: $desktop-width) {
       left: -320px;
     }
@@ -133,6 +146,11 @@
   &--subtitles {
     position: relative;
     left: 50px;
+
+    @media (min-width: $tablet-width) {
+      left: 215px;
+    }
+
     @media (min-width: $desktop-width) {
       left: 290px;
     }
@@ -141,6 +159,11 @@
   &--fullscreen {
     position: relative;
     left: 81px;
+
+    @media (min-width: $tablet-width) {
+      left: 248px;
+    }
+
     @media (min-width: $desktop-width) {
       left: 322px;
     }

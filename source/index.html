@@ -26,13 +26,19 @@
       </nav>
       <div class="page-header__top">
         <a class="logo">
-          <img class="logo__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+          </picture>
         </a>
         <button class="page-header__menu-button">
         </button>
       </div>
       <div class="page-header__intro intro">
-        <img class="intro__image" src="img/text-sedona-index.svg" width="282" height="214" alt="Заголовок Седоны">
+        <source media="(min-width: 1200px)" srcset="img/text-sedona-index.svg">
+        <source media="(min-width: 768px)" srcset="img/text-sedona-index.svg">
+        <img class="intro__image" src="img/text-sedona-index.svg" alt="Заголовок Седоны">
       </div>
     </header>
 
@@ -56,7 +62,13 @@
                 там течет своя жизнь</p>
             </div>
             <div class="features__image">
-              <img src="img/main-city-mobile@1x.jpg" width="100%" height="260" alt="Настоящий городок">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x,
+              img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x,
+              img/main-city-tablet@2x.jpg 2x">
+                <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Настоящий городок">
+              </picture>
             </div>
             <ul class="features__sublist">
               <li class="features__item features__item--house">
@@ -79,7 +91,13 @@
               <p>Да, по нему можно пройти!Если вы осмелитесь, конечно</p>
             </div>
             <div class="features__image">
-              <img src="img/main-bridge-mobile@1x.jpg" width="100%" height="260" alt="Мост">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x,
+                img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x,
+                img/main-bridge-tablet@2x.jpg 2x">
+                <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост">
+              </picture>
             </div>
           </li>
           <li class="features__item features__item--grey">
@@ -125,7 +143,11 @@
       <p class="page-footer__copyright copyright">
         Разработано:
         <a class="copyright__link" href="htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Академи">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-htmlacademy.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-htmlacademy.svg">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Академи">
+          </picture>
         </a>
       </p>
     </footer>
