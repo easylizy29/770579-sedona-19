@@ -28,6 +28,7 @@
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   &--twitter {
     background-size: 23px 20px;
@@ -46,9 +47,11 @@
 }
 
 .social-link:hover {
-  background-color: $hover-blue;
+  background-color: $active-blue;
+  cursor: pointer;
 }
 
 .social-link:active {
   background-color: $active-blue;
+  cursor: pointer;
 }
