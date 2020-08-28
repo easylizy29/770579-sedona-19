@@ -13,6 +13,7 @@ const del = require("del");
 const imagemin = require('gulp-imagemin');
 const webP = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
+const uglify = require("gulp-uglify");
 
 const copy = () => {
   return gulp.src([
@@ -97,11 +98,24 @@ const webp = () => {
 
 exports.webp = webp;
 
+const js = () => {
+  return gulp.src("source/js/*.js")
+      .pipe(plumber())
+      .pipe(uglify())
+      .pipe(rename({
+        suffix: ".min"
+      }))
+      .pipe(gulp.dest("build/js"))
+}
+
+exports.js = js;
+
 const build = gulp.series(
     clean,
     gulp.parallel(
       copy,
       styles,
+      js,
       sprite,
       images,
     ),

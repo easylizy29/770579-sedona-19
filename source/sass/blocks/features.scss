@@ -3,12 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $white;
-  counter-reset: section;
-}
-
-.features__reason::after {
-  counter-increment: section;
-  content: "&mdash;&nbsp;"features__reason"&nbsp;&mdash;" counter(section);
+  counter-reset: reason;
 }
 
 .review-form__label-radio::after {
@@ -252,7 +247,15 @@
     @include font-set(23px, 26px, 700);
     padding-bottom: 10px;
   }
+
+  &::after {
+    display: block;
+    font-weight: 400;
+    counter-increment: reason;
+    content: "— №" counter(reason) " —";
+  }
 }
+
 
 .features__text {
   @include font-set(14px, 21px, 400);
