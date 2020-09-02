@@ -138,20 +138,3 @@ li.gallery__item img {
     align-items: center;
   }
 }
-
-.gallery__assessment-button {
-  @include button-throw;
-  margin-right: 10px;
-}
-
-.gallery__like-icon {
-  fill: #b2b2b2;
-  @media (min-width: $desktop-width) {
-    fill: #ffffff;
-  }
-}
-
-.assessment__text {
-  @include font-set(14px, 24px, 700);
-  margin: 0 13px 6px 0;
-}

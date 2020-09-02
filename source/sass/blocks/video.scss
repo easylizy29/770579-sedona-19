@@ -10,6 +10,7 @@
   justify-content: center;
   padding: 25px 0 29px;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     padding: 73px 0 58px;
   }
@@ -17,6 +18,7 @@
   .video__intro-title {
     @include font-set(18px, 26px, 700);
     text-align: center;
+
     @media (min-width: $tablet-width) {
       @include font-set(30px, 26px, 700);
       padding-left: 170px;
@@ -31,9 +33,11 @@
   .video__intro-text {
     @include font-set(14px, 21px, 400);
     text-align: center;
+
     @media (min-width: $tablet-width) {
       width: 60%;
     }
+
     @media (min-width: $desktop-width) {
       width: 40%;
     }
@@ -45,6 +49,7 @@
   justify-content: center;
   margin-bottom: -7px;
   padding: 0;
+
   @media (min-width: $tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
@@ -62,6 +67,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: -100px;
+
   @media (min-width: $desktop-width) {
     padding: 0;
     margin-top: 0;
@@ -74,31 +80,61 @@
   flex-wrap: wrap;
 }
 
-.video__timeline {
-  top: 0;
+.video__controls::after {
+  content: "";
   display: block;
-  height: 2px;
-  width: 500px;
-  background-color: rgba(255,255,255,0.5);
-  margin: -50px 75px 0 0;
+  position: absolute;
+  top: 38px;
+  left: -144px;
+  height: 54px;
+  width: 288px;
+  background-color: rgba(0,0,0,0.5);
 
   @media (min-width: $tablet-width) {
-    margin: -50px 75px 0 0;
+    display: none;
+  }
+}
+
+.video__timeline {
+  display: block;
+  position: absolute;
+  left: -115px;
+  top: 61px;
+  height: 3px;
+  width: 230px;
+  background-color: rgba(255,255,255,0.5);
+
+  @media (min-width: $tablet-width) {
+    left: -245px;
+    top: 41px;
+    width: 420px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -50px 75px 0 0;
+    left: -270px;
+    top: -49px;
+    width: 500px;
   }
 }
 
 .video__drag {
   display: block;
   position: absolute;
-  top: -54px;
-  left: 200px;
+  top: 58px;
+  left: -78px;
   border-radius: 50%;
   border: 5px solid #ffffff;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    left: -156px;
+    top: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -195px;
+    top: -52px;
+  }
 }
 
 .video__wrapper-controls {
@@ -110,6 +146,7 @@
   width: 90%;
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     position: relative;

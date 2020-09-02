@@ -1,4 +1,16 @@
 .assessment__text {
-  @include font-set(14px, 21px, 700);
-  text-transform: uppercase;
+  @include font-set(14px, 24px, 700);
+  margin: 0 13px 6px 0;
+}
+
+.assessment__assessment-button {
+  @include button-throw;
+  margin-right: 10px;
+}
+
+.assessment__like-icon {
+  fill: #b2b2b2;
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+  }
 }
