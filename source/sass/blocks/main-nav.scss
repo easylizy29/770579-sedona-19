@@ -24,6 +24,7 @@
   width: 22px;
   height: 22px;
   background-image: url("../img/icon-cross.svg");
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -81,6 +82,7 @@ a:active {
 }
 
 .site-list {
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -96,6 +98,10 @@ a:active {
     list-style: none;
     width: 100%;
   }
+}
+
+.silte-list-show {
+  display: block;
 }
 
 .site-list__item {

@@ -29,6 +29,7 @@
   height: 23px;
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -74,4 +75,11 @@
       background-size: 1200px auto;
     }
   }
+}
+
+.page-header__triangle {
+  display: block;
+  justify-content: center;
+  height: auto;
+  width: 100%;
 }

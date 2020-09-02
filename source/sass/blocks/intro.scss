@@ -3,14 +3,12 @@
   height: auto;
   padding-top: 87px;
   padding-bottom: 86px;
-
   @media (min-width: $tablet-width) {
     width: 60%;
     height: auto;
     padding-top: 78px;
     padding-bottom: 91px;
   }
-
   @media (min-width: $desktop-width) {
     width: 39%;
     height: auto;
@@ -29,10 +27,53 @@
       padding-top: 94px;
       padding-bottom: 117px;
     }
-
     @media (min-width: $desktop-width) {
       padding-top: 102px;
       padding-bottom: 119px;
     }
+  }
+}
+
+.intro__image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 320px auto;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-size: 768px auto;
+  }
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: 1200px auto;
+  }
+}
+
+.intro__triangle {
+  display: block;
+  position: absolute;
+  top: 414px;
+  left: 0;
+  background-size: 320px auto;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-size: 768px auto;
+  }
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: 1200px auto;
   }
 }
