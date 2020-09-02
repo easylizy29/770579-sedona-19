@@ -71,12 +71,12 @@
 
     @media (min-width: $desktop-width) {
       width: 33.3334%;
-      padding: 19px 0 69px 0;
+      padding: 13px 0 69px 0;
     }
   }
 
   &--grey .features__title {
-    padding: 8px 0 28px 0;
+    padding: 8px 0 0 0;
   }
 
   &--grey .features__text {
@@ -197,7 +197,7 @@
   text-align: center;
 
   &--second {
-    padding: 22px 17px 18px 17px;
+    padding: 28px 9px 18px 9px;
   }
 
   @media (min-width: $tablet-width) {
@@ -211,7 +211,7 @@
   }
 
   @media (min-width: $desktop-width) {
-  padding: 35px 17px 0 17px;
+  padding: 2px 20px 0 20px;
   }
 }
 
@@ -250,7 +250,9 @@
 
   &::after {
     display: block;
+    font-size: 13px;
     font-weight: 400;
+    padding-top: 14px;
     counter-increment: reason;
     content: "— №" counter(reason) " —";
   }

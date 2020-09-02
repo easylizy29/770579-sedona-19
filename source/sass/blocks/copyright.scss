@@ -2,7 +2,9 @@
   text-decoration: none;
 }
 
-.copyright__link img{
+.copyright__link img {
   display: block;
-  margin-left: 10px;
+  position: relative;
+  left: 10px;
+  top: 7px;
 }
