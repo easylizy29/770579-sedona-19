@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 27px 12px;
+  padding-bottom: 16px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
@@ -22,13 +22,13 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 82px 0 54px 0;
+      padding: 83px 0 42px 0;
     }
   }
 
   &--index {
     @media (min-width: $tablet-width) {
-      padding: 32px 20px 26px 20px;
+      padding: 0 20px 24px 20px;
     }
 
     @media (min-width: $desktop-width) {
