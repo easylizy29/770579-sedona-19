@@ -6,10 +6,12 @@
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
-  <script>document.documentElement.classList.remove("no-js")</script>
+  <script>
+    document.documentElement.classList.remove("no-js")
+  </script>
   <script>
     // Picture element HTML5 shiv
-    document.createElement( "picture" );
+    document.createElement("picture");
   </script>
   <script src="picturefill.js" async></script>
 </head>
@@ -118,6 +120,20 @@
         <div class="review-form__wrapper-button">
           <button class="review-form__button button" type="submit">Отправить отзыв</button>
           <span class="review-form__required-fields"><sup>*</sup> - Обязательные поля</span>
+        </div>
+        <div class="review-form__modal-window-error">
+          <h2 class="review-form__title-error">Что-то пошло не так!</h2>
+          <p class="review-form__text-error">Проверьте поля, выделенные красным,
+             скорее всего вы забыли из заполнить</p>
+          <button class="review-form__button-error">Ок</button>
+        </div>
+        <div class="review-form__modal-window-comment">
+          <h2 class="review-form__title-comment">Ваш отзыв отправлен!</h2>
+          <p class="review-form__text-comment">Спасибо за ваше участие,
+             ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
+          <div class="review-form__bg-button">
+            <button class="review-form__button-comment">Закрыть окно</button>
+          </div>
         </div>
       </form>
     </main>
