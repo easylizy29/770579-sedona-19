@@ -276,7 +276,7 @@
   }
 }
 
-.review-from__input-wrapper {
+.review-form__input-wrapper {
   position: relative;
   margin: 7px 0 12px 0;
 }
@@ -614,26 +614,20 @@
 }
 
 .review-form__modal-window-error {
-  display: block;
+  display: none;
   position: fixed;
-  background-position: 50% 50%;
-  top: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: $white;
   width: 320px;
   height: 280px;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.3);
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    background-position: 50% 50%;
-    top: 28%;
     width: 400px;
     height: 347px;
-    z-index: 1;
-  }
-
-  @media (min-width: $tablet-width) {
-    top: 44%;
   }
 }
 
@@ -671,21 +665,19 @@
 }
 
 .review-form__modal-window-comment {
-  display: block;
+  display: none;
   position: fixed;
-  background-position: 50% 50%;
-  top: 55%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: $white;
   width: 320px;
   height: 280px;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.3);
 
   @media (min-width: $tablet-width) {
-    display: block;
     width: 640px;
     height: 347px;
-    background-position: 50% 50%;
-    top: 5%;
   }
 }
 
@@ -715,7 +707,7 @@
 
 .review-form__bg-button {
   position: absolute;
-  top: 182px;
+  top: 202px;
   width: 320px;
   height: 98px;
   background-color: $secondary-color;
