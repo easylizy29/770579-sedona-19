@@ -7,7 +7,7 @@
   align-items: center;
 
   &--index {
-    padding-top: 35px;
+    padding-top: 16px;
 
     @media (min-width: $tablet-width) {
       padding-top: 13px;
@@ -16,13 +16,18 @@
 
   &--form {
     padding-top: 50px;
+
     @media (min-width: $tablet-width) {
       padding-top: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 20px;
     }
   }
 
   &--photo {
-    padding-top: 71px;
+    padding-top: 51px;
 
     @media (min-width: $tablet-width) {
       padding-top: 58px;
@@ -43,7 +48,7 @@
 .page-footer__hashtag {
   @include font-set(21px, 26px, 700);
   text-transform: uppercase;
-  margin: 0 0 -4px -14px;
+  margin: 20px 0 -4px -8px;
 
   @media (min-width: $tablet-width) {
     margin: -2px 0 0 1px;

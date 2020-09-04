@@ -80,7 +80,8 @@
   }
 
   &--textarea {
-    margin-top: 20px;
+    margin-top: 26px;
+
     @media (min-width: $tablet-width) {
       width: 100%;
       margin-top: 68px;
@@ -583,6 +584,10 @@
   font-weight: 700;
   color: $white;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 480px;
