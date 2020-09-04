@@ -38,6 +38,7 @@
 .offers__title {
   @include font-set(21px, 40px, 700);
   text-align: center;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     @include font-set(30px, 40px, 700);

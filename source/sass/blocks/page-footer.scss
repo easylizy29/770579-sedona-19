@@ -5,7 +5,14 @@
   margin: 0 auto;
   background-color: $white;
   align-items: center;
-  padding-top: 12px;
+
+  &--index {
+    padding-top: 35px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 13px;
+    }
+  }
 
   &--form {
     padding-top: 50px;
@@ -35,6 +42,15 @@
 .page-footer__hashtag {
   @include font-set(21px, 26px, 700);
   text-transform: uppercase;
+  margin: 0 0 -4px -14px;
+
+  @media (min-width: $tablet-width) {
+    margin: -2px 0 0 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 3px 0 0 -13px;
+  }
 }
 
 .page-footer__list__page-wrapper {
@@ -51,7 +67,12 @@
   padding-bottom: 8px;
   align-items: center;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 14px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 0;
   }
 }

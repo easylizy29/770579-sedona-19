@@ -25,12 +25,12 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     padding-top: 61px;
-    padding-bottom: 43px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +42,7 @@
 
 .features__sublist .features__item {
   width: 100%;
-  padding-left: 50px;
+  padding-left: 48px;
 
   @media (min-width: $tablet-width) {
     width: 33.3334%;
@@ -64,23 +64,42 @@
     background-color: $secondary-color;
     justify-content: center;
     text-align: center;
+
     @media (min-width: $tablet-width) {
       width: 33.3334%;
-      padding: 16px 0 25px 0;
+      padding: 16px 0 43px 0;
     }
 
     @media (min-width: $desktop-width) {
       width: 33.3334%;
-      padding: 13px 0 69px 0;
+      padding: 13px 0 67px 0;
     }
   }
 
   &--grey .features__title {
-    padding: 8px 0 0 0;
+    padding: 11px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      padding: 8px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 37%;
+      padding: 12px 0 0 0;
+    }
   }
 
   &--grey .features__text {
-    padding: 7px 26px 22px 26px;
+    padding: 0 26px 22px 26px;
+
+    @media (min-width: $tablet-width) {
+      padding: 6px 26px 18px 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 1px 26px 18px 26px;
+    }
   }
 
   &--house {
@@ -99,9 +118,9 @@
   }
 
   &--gifts {
-    background-size: 35px 43px ;
+    background-size: 33px 33px ;
     background-image: url("../img/icon-gift.svg");
-    margin-left: 20px;
+    margin-left: 22px;
 
     @media (min-width: $tablet-width) {
       background-size: 25%;
@@ -114,7 +133,7 @@
   }
 
   &--burger {
-    background-size: 39px 35px;
+    background-size: 35px 36px;
     background-image: url("../img/icon-burger.svg");
     margin-left: 20px;
 
@@ -165,9 +184,16 @@
 
 .features__image img {
   display: block;
+
   @media (min-width: $tablet-width) {
     position: relative;
-    // top: -130px;
+  }
+}
+
+.features__advantage {
+
+  @media (min-width: $desktop-width) {
+    bottom: 71px;
   }
 }
 
@@ -196,22 +222,45 @@
   text-transform: uppercase;
   text-align: center;
 
-  &--second {
-    padding: 28px 9px 18px 9px;
-  }
-
   @media (min-width: $tablet-width) {
     width: 33.3334%;
+    padding: 27px 17px 21px 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 33px 32px 18px 35px;
+  }
+
+  &--second {
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 21px 32px 13px 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 31px 31px 13px 34px;
+    }
+  }
+
+  &--second .features__title {
+    padding: 0 0 0 0;
+    margin-bottom: -1px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 19px;
+    }
   }
 }
 
 .features__info p {
     @media (min-width: $tablet-width) {
-    padding: 16px 17px 0 17px;
+    // padding: 16px 17px 0 17px;
   }
 
   @media (min-width: $desktop-width) {
-  padding: 2px 20px 0 20px;
+  padding: 2px 42px 0 42px;
   }
 }
 
@@ -219,9 +268,10 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    padding: 0 70px;
+    padding: 0 75px;
   }
 }
+
 
 .features__title {
   @include font-set(18px, 26px, 700);
@@ -241,23 +291,31 @@
   @include font-set(18px, 26px, 700);
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 29px;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     @include font-set(21px, 26px, 700);
-    padding-bottom: 10px;
+    padding: 0 5px 0 5px;
   }
 
   &::after {
     display: block;
     font-size: 13px;
     font-weight: 400;
-    padding-top: 14px;
+    padding-top: 13px;
     counter-increment: reason;
     content: "— №" counter(reason) " —";
+
+    @media (min-width: $tablet-width) {
+      padding-top: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 15px;
+      padding-bottom: 2px;
+    }
   }
 }
-
 
 .features__text {
   @include font-set(14px, 21px, 400);
@@ -269,7 +327,8 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     width: 80%;
-    padding-right: 0;
-    padding-top: 21px;
+    padding-top: 19px;
+    padding-left: 19px;
+    padding-right: 23px;
   }
 }
