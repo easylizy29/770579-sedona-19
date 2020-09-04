@@ -622,6 +622,19 @@
   width: 320px;
   height: 280px;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background-position: 50% 50%;
+    top: 28%;
+    width: 400px;
+    height: 347px;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 44%;
+  }
 }
 
 .review-form__title-error {
@@ -638,11 +651,10 @@
   text-transform: uppercase;
   color: $black;
   padding: 18px 42px;
-
 }
 
 .review-form__button-error {
-  @include font-set(14px, 21px, 700);
+  @include font-set(16px, 21px, 700);
   border: none;
   text-transform: uppercase;
   width: 180px;
@@ -653,6 +665,9 @@
   background-color: $primary-color;
   color: $white;
 
+  @media (min-width: $tablet-width) {
+    margin: 45px 0 0 110px;
+  }
 }
 
 .review-form__modal-window-comment {
@@ -664,6 +679,14 @@
   width: 320px;
   height: 280px;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 640px;
+    height: 347px;
+    background-position: 50% 50%;
+    top: 5%;
+  }
 }
 
 .review-form__title-comment {
@@ -671,6 +694,11 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+  @include font-set(22px, 21px, 700);
+  margin: 31px 0 0 0;
+  }
 }
 
 .review-form__text-comment {
@@ -679,6 +707,10 @@
     text-transform: uppercase;
     color: $black;
     padding: 18px 42px;
+
+    @media (min-width: $tablet-width) {
+      margin: 18px 82px;
+    }
 }
 
 .review-form__bg-button {
@@ -687,10 +719,15 @@
   width: 320px;
   height: 98px;
   background-color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    height: 146px;
+  }
 }
 
 .review-form__button-comment {
-  @include font-set(14px, 21px, 700);
+  @include font-set(16px, 21px, 700);
   border: none;
   text-transform: uppercase;
   width: 280px;
@@ -700,4 +737,9 @@
   align-items: center;
   background-color: $primary-color;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin: 45px 0 0 94px;
+  }
 }
