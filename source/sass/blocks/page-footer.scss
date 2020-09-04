@@ -22,13 +22,14 @@
   }
 
   &--photo {
-    padding-top: 48px;
+    padding-top: 71px;
+
     @media (min-width: $tablet-width) {
       padding-top: 58px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 101px;
+      padding-top: 89px;
     }
   }
 

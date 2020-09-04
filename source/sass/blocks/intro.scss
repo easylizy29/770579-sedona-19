@@ -45,12 +45,14 @@
       height: auto;
       padding-top: 49px;
       padding-bottom: 53px;
+
       @media (min-width: $tablet-width) {
         width: 456px;
         height: auto;
         padding-top: 94px;
         padding-bottom: 117px;
       }
+
       @media (min-width: $desktop-width) {
         padding-top: 102px;
         padding-bottom: 119px;
