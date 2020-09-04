@@ -60,13 +60,16 @@
   }
 }
 
-.page-footer__list {
-  display: inline-block;
-}
 
 .page-footer__list {
   @include list-reset;
+  display: inline-block;
   list-style: none;
+  padding: 15px 0 33px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .page-footer__copyright {
@@ -75,8 +78,10 @@
   margin: 0 auto;
   align-items: center;
   text-transform: uppercase;
+  padding: 0 0 28px 0;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    padding: 0;
   }
 }
