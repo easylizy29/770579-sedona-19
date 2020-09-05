@@ -21,6 +21,8 @@
   }
 
   &--index {
+    padding: 0 0 0 0;
+
     &::after {
       content: "";
       display: block;
@@ -44,8 +46,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 32px;
-      padding-bottom: 37px;
+      padding-top: 39px;
+      padding-bottom: 28px;
     }
   }
 
@@ -92,14 +94,16 @@
 
   &--index {
     @include font-set(18px, 26px, 700);
-    padding: 24px 0 0;
+    padding: 16px 0 10px 0;
+
     @media (min-width: $tablet-width) {
       @include font-set(21px, 26px, 700);
       padding: 0 0 16px;
     }
+
     @media (min-width: $desktop-width) {
       font-size: 23px;
-      padding: 0 0 11px;
+      padding: 0 31px 13px 31px;
     }
   }
 

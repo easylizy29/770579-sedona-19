@@ -53,10 +53,23 @@
   @include font-set(21px, 26px, 700);
   text-transform: uppercase;
   vertical-align: middle;
+  margin: 0 auto;
+  padding: 39px 0 21px 0;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    position: relative;
+    left: -62px;
     vertical-align: middle;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    position: relative;
+    left: -148px;
+    vertical-align: middle;
+    padding: 0;
   }
 }
 
@@ -81,7 +94,14 @@
   padding: 0 0 28px 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    left: 54px;
     display: inline-block;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 137px;
+
   }
 }
