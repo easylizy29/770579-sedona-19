@@ -12,7 +12,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 73px 0 58px;
+    padding: 63px 0 85px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 67px 0 84px 0;
   }
 
   .video__intro-title {
@@ -33,10 +37,12 @@
   .video__intro-text {
     @include font-set(14px, 24px, 400);
     text-align: center;
+    padding: 0 24px 0 23px;
 
     @media (min-width: $tablet-width) {
       @include font-set(14px, 21px, 400);
       width: 60%;
+      margin: 9px 0 0 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -142,8 +148,8 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 92px 0 0;
+  padding-bottom: 16px;
+  margin: 92px 0 0 0;
   width: 90%;
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
@@ -151,16 +157,17 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     position: relative;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 36px;
+    padding-bottom: 27px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 85%;
   }
+
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-top: 31px;
-    padding-bottom: 31px;
-    margin-top: -95px;
+    padding-top: 34px;
+    padding-bottom: 30px;
+    margin-top: -94px;
     width: 67%;
   }
 }

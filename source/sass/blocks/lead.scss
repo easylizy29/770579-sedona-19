@@ -5,19 +5,24 @@
   background-color: $white;
 
   &--form {
-    padding: 25px 0 9px;
+    padding: 22px 0 29px 0;
 
     @media (min-width: $tablet-width) {
-      padding: 50px 0 62px;
+      padding: 37px 0 86px 0;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 86px 0 44px;
+      padding: 88px 0 61px 0;
     }
   }
 
   &--form .lead__text {
     @include font-set(14px, 24px, 400);
+    padding: 0 30px 0 30px;
+
+    @media (min-width: $tablet-width) {
+      margin: 7px 0 0 0;
+    }
   }
 
   &--index {
@@ -52,26 +57,31 @@
   }
 
   &--photo {
-    padding: 15px 0 16px 0;
+    padding: 15px 0 24px 0;
 
     @media (min-width: $tablet-width) {
-      padding: 50px 0 56px;
+      padding: 41px 0 66px 0;
     }
     @media (min-width: $desktop-width) {
-      padding-top: 88px;
-      padding-bottom: 54px;
+      padding-top: 77px;
+      padding-bottom: 63px;
     }
   }
 
   &--photo .lead__text {
+    @include font-set(14px, 24px, 400);
     padding: 0 24px 19px 28px;
 
     @media (min-width: $tablet-width) {
       width: 70%;
       margin: 0;
+      padding: 5px 24px 14px 27px;
     }
+
     @media (min-width: $desktop-width) {
       width: 42%;
+      padding: 0 35px 19px 35px;
+      margin: 2px 0 0 0;
     }
   }
 }
