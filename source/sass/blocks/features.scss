@@ -29,8 +29,8 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    padding-top: 61px;
-    padding-bottom: 44px;
+    padding-top: 57px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,7 +67,7 @@
 
     @media (min-width: $tablet-width) {
       width: 33.3334%;
-      padding: 11px 0 20px 0;
+      padding: 20px 0 20px 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -296,6 +296,11 @@
   @media (min-width: $tablet-width) {
     @include font-set(21px, 26px, 700);
     padding: 0 5px 0 5px;
+    width: 52%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 35%;
   }
 
   &::after {
@@ -328,7 +333,7 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     width: 80%;
-    padding-top: 19px;
+    padding-top: 25px;
     padding-left: 19px;
     padding-right: 23px;
   }

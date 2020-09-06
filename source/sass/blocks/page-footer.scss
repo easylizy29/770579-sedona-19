@@ -10,11 +10,11 @@
     padding: 0;
   }
 
-  &--index {
-    padding-top: 16px;
+  &--index .page-footer__hashtag {
+    padding: 38px 0 21px 0;
 
     @media (min-width: $tablet-width) {
-      padding-top: 13px;
+      padding: 17px 0 21px 0;
     }
   }
 
@@ -102,6 +102,5 @@
 
   @media (min-width: $desktop-width) {
     left: 137px;
-
   }
 }
