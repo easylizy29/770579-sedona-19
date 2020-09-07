@@ -7,7 +7,11 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding: 11px 0 0 0;
+    padding: 19px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 0 0 0;
   }
 }
 
@@ -39,7 +43,7 @@
 .offers__title {
   @include font-set(21px, 40px, 700);
   text-align: center;
-  padding-top: 14px;
+  padding-top: 6px;
 
   @media (min-width: $tablet-width) {
     @include font-set(30px, 40px, 700);

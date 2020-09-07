@@ -72,7 +72,7 @@
 
     @media (min-width: $desktop-width) {
       width: 33.3334%;
-      padding: 13px 0 45px 0;
+      padding: 22px 0 45px 0;
     }
   }
 
@@ -91,7 +91,7 @@
   }
 
   &--grey .features__text {
-    padding: 0 26px 21px 26px;
+    padding: 0 25px 27px 26px;
 
     @media (min-width: $tablet-width) {
       padding: 6px 26px 18px 26px;
@@ -224,7 +224,7 @@
 
   @media (min-width: $tablet-width) {
     width: 33.3334%;
-    padding: 21px 17px 21px 17px;
+    padding: 10px 17px 21px 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -236,7 +236,7 @@
     padding-top: 20px;
 
     @media (min-width: $tablet-width) {
-      padding: 21px 32px 13px 34px;
+      padding: 12px 32px 13px 34px;
     }
 
     @media (min-width: $desktop-width) {
@@ -245,18 +245,18 @@
   }
 
   &--second .features__title {
-    // padding: 0 0 0 0;
-    // margin-bottom: -1px;
+    padding: 0 0 0 0;
+    margin-bottom: -1px;
 
     @media (min-width: $tablet-width) {
-      // margin-bottom: 19px;
+      margin-bottom: 19px;
     }
   }
 }
 
 .features__info p {
     @media (min-width: $tablet-width) {
-    // padding: 16px 17px 0 17px;
+    padding: 16px 17px 0 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -271,7 +271,6 @@
     padding: 0 75px;
   }
 }
-
 
 .features__title {
   @include font-set(18px, 26px, 700);

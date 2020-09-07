@@ -1,6 +1,6 @@
 .assessment__text {
   @include font-set(14px, 24px, 700);
-  margin: 6px 0 7px -16px;
+  margin: 6px 0 7px 5px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -16,6 +16,10 @@
       right: 20px;
     }
   }
+
+  &--big .assessment__text {
+    margin: 6px 0 7px -8px;
+  }
 }
 
 .assessment__button {
@@ -23,7 +27,8 @@
   margin-right: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 25px;
+    margin-right: 22px;
+    margin-top: -8px;
   }
 
   @media (min-width: $desktop-width) {
