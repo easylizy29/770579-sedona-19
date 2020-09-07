@@ -70,12 +70,21 @@
 }
 
 .video__player {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 282px;
   justify-content: center;
-  margin-top: -100px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 650px;
+    padding: 0;
+    margin-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 800px;
+    margin-top: -100px;
     padding: 0;
     margin-top: 0;
   }
@@ -83,17 +92,17 @@
 
 .video__controls {
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .video__controls::after {
   content: "";
   display: block;
   position: absolute;
-  top: 48px;
-  left: -140px;
-  height:45px;
+  top: -45px;
+  left: 20px;
+  height: 45px;
   width: 281px;
   background-color: rgba(0,0,0,0.5);
 
@@ -105,8 +114,8 @@
 .video__timeline {
   display: block;
   position: absolute;
-  left: -115px;
-  top: 71px;
+  left: 47px;
+  top: -25px;
   height: 3px;
   width: 230px;
   background-color: rgba(255,255,255,0.5);
@@ -118,7 +127,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: -270px;
+    left: 292px;
     top: -49px;
     width: 500px;
   }
@@ -127,30 +136,30 @@
 .video__drag {
   display: block;
   position: absolute;
-  top: 67px;
-  left: -82px;
+  top: -28px;
+  left: 77px;
   border-radius: 50%;
   border: 5px solid #ffffff;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    left: -119px;
-    top: 42px;
+    left: 265px;
+    top: -51px;
   }
 
   @media (min-width: $desktop-width) {
-    left: -195px;
+    left: 406px;
     top: -52px;
   }
 }
 
 .video__wrapper-controls {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 16px;
-  margin: 92px 0 0 0;
-  width: 90%;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 31px 28px 32px;
+  padding: 21px 0 16px 0;
+  // width: 90%;
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
 
@@ -159,8 +168,9 @@
     position: relative;
     padding-top: 36px;
     padding-bottom: 27px;
+    margin-top: -94px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 85%;
+    // width: 85%;
   }
 
   @media (min-width: $desktop-width) {
@@ -168,7 +178,7 @@
     padding-top: 34px;
     padding-bottom: 30px;
     margin-top: -94px;
-    width: 67%;
+    // width: 67%;
   }
 }
 

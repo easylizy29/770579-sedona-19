@@ -245,11 +245,11 @@
   }
 
   &--second .features__title {
-    padding: 0 0 0 0;
-    margin-bottom: -1px;
+    // padding: 0 0 0 0;
+    // margin-bottom: -1px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 19px;
+      // margin-bottom: 19px;
     }
   }
 }

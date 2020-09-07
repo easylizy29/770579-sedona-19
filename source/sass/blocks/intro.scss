@@ -23,6 +23,7 @@
   }
 
   .intro__image {
+    display: flex;
     width: 281px;
     height: auto;
     padding-top: 87px;
@@ -40,6 +41,9 @@
       height: auto;
       padding-top: 79px;
       padding-bottom: 90px;
+      position: relative;
+      width: 100%;
+      height: auto;
     }
 
     &--short {
