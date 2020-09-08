@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    padding-top: 57px;
+    padding-top: 61px;
     padding-bottom: 40px;
   }
 
@@ -67,7 +67,7 @@
 
     @media (min-width: $tablet-width) {
       width: 33.3334%;
-      padding: 20px 0 20px 0;
+      padding: 9px 0 20px 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -94,11 +94,11 @@
     padding: 0 25px 27px 26px;
 
     @media (min-width: $tablet-width) {
-      padding: 6px 26px 18px 26px;
+      padding: 1px 26px 18px 26px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 1px 26px 18px 26px;
+      padding: 5px 17px 18px 17px;
     }
   }
 
@@ -168,6 +168,19 @@
   margin-top: 9px;
 }
 
+.features__item--gifts .features__text {
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 62px 0 62px;
+  }
+}
+
 .features__item--burger .features__title {
   margin-top: 9px;
 }
@@ -204,6 +217,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
     width: 40%;
   }
 }
@@ -212,6 +230,25 @@
   margin-top: 0;
   margin-left: 70px;
   margin-right: 0;
+}
+
+.features__info .features__title {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 75px;
+  }
+}
+
+.features__info p {
+    @media (min-width: $tablet-width) {
+    @include font-set(14px, 22px, 400);
+    padding: 4px 12px 0 12px;
+  }
+
+    @media (min-width: $desktop-width) {
+    padding: 6px 35px 0 35px;
+  }
 }
 
 .features__info {
@@ -250,30 +287,28 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 19px;
+      padding: 8px 20px 0 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 19px;
+      padding: 0 75px;
+    }
+  }
+
+  &--second p {
+
+      @media (min-width: $tablet-width) {
+      padding: 2px 15px 0 15px;
+    }
+      @media (min-width: $desktop-width) {
+      padding: 2px 53px 0 53px;
     }
   }
 }
 
-.features__info p {
-    @media (min-width: $tablet-width) {
-    padding: 16px 17px 0 17px;
-  }
-
-  @media (min-width: $desktop-width) {
-  padding: 2px 42px 0 42px;
-  }
-}
-
-.features__info .features__title {
-  width: 100%;
-
-  @media (min-width: $desktop-width) {
-    padding: 0 75px;
-  }
-}
-
 .features__title {
-  @include font-set(18px, 26px, 700);
+  @include font-set(21px, 24px, 700);
   text-transform: uppercase;
   text-align: center;
 
@@ -287,18 +322,19 @@
 }
 
 .features__reason {
-  @include font-set(18px, 26px, 700);
+  @include font-set(21px, 22px, 700);
   text-transform: uppercase;
   text-align: center;
   padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     @include font-set(21px, 26px, 700);
-    padding: 0 5px 0 5px;
+    padding: 12px 5px 0 5px;
     width: 52%;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 5px 0 5px;
     width: 35%;
   }
 
@@ -331,14 +367,15 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    width: 80%;
+    width: 90%;
     padding-top: 25px;
     padding-left: 19px;
     padding-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 22px;
+    width: 80%;
+    padding-top: 24px;
     padding-left: 15px;
     padding-right: 15px;
   }
